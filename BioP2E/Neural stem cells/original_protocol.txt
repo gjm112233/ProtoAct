@@ -1,7 +1,0 @@
-Initial state: Fetal mouse brain tissue has been obtained.
-
-(1) Transfer the brain tissue into a sterile 90 mm culture dish and rinse it with 10 mL of D-Hanks solution.
-
-(2) Use surgical instruments to cut the brain tissue into pieces of approximately 1 mm³. Transfer the tissue pieces into a centrifuge tube, add 6 mL of DMEM/F12 conditioned medium, and resuspend the cells. Filter the suspension through a 200-mesh nylon screen to obtain a single-cell suspension.
-
-(3) Perform cell counting using trypan blue. Seed the cells into a 90 mm culture dish at a density of 1×10^6 cells/mL and culture them in an incubator at 37°C with 5% CO₂.

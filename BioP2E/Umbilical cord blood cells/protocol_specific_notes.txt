@@ -1,4 +1,0 @@
-1. In Step (1), one-quarter of the 20 mL umbilical cord blood volume is 5 mL. Therefore, 5 mL of 6% hydroxyethyl starch sodium chloride injection should be added.
-2. In Step (1), “mix thoroughly” should be parsed as gently shaking the 250 mL dropping bottle.
-3. In Step (2), “aspirate 3 mL of the upper cell suspension” should be parsed as aspirating the cell suspension and dispensing it into the target container.
-4. In Step (2), the cells must be washed twice by centrifugation. Each washing cycle should include the following operations: place the centrifuge tube into the centrifuge, discard the supernatant, add the culture medium, and resuspend the cells. After one complete washing cycle, an additional subtask should specify that the corresponding subtasks are repeated until a total of two centrifugation washes has been completed.

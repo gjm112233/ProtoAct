@@ -1,4 +1,0 @@
-1. In Step a, PBS is used to wash away the residual culture medium. After washing, the PBS must also be aspirated from the culture dish and dispensed into the waste container.
-2. Step b must include a subtask for observing the cell state using an inverted microscope.
-3. The culture medium added in Step b must be the DMEM supplemented with 10% FBS specified earlier in the protocol.
-4. At the end of Step c, the complete sequence for placing the culture dish in the incubator must be parsed, including placing the dish inside the incubator, setting the incubation parameters, and starting the incubator.

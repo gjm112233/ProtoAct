@@ -1,4 +1,0 @@
-1. In Step (a), before centrifugation, the culture dish must first be removed from the incubator. The cell state in the culture dish must then be observed using an inverted microscope. After the observation is completed, the culture dish must be moved to the workspace.
-2. After centrifugation and removal of the supernatant, a cell dilution operation must be included.
-3. The incubator parameters must be uniformly set to 37°C and a CO₂ concentration of 5%.
-4. Step (d) should be parsed directly as: Measure the absorbance at a detection wavelength of 450 nm using a microplate reader and calculate cell viability.

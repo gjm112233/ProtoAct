@@ -1,5 +1,0 @@
-Initial state: Mouse brain tissue (2 g) has been obtained and is initially placed in a culture dish containing Hanks solution.
-
-(1) Transfer the brain tissue into another culture dish and wash it three times with Hanks solution. Transfer the tissue into a test tube and add approximately 40 times its volume of Hanks solution. Pipette repeatedly to obtain a single-cell suspension. Allow the suspension to stand for 10 min, discard the supernatant, and repeat this process three times.
-
-(2) Add an appropriate volume of DMEM/F12 culture medium to the sediment obtained from the final settling step. Filter the suspension through a 73 μm nylon screen and collect the cell suspension. Seed the cells into a culture flask at a concentration of 1×10^4 cells/mL and culture them in an incubator at 37°C with 5% CO₂.

@@ -1,5 +1,0 @@
-After THP-1 cells have been cultured in the incubator for three days, proceed with the following steps if the cells are observed to be uniformly suspended and clustered:
-a. Centrifuge the THP-1 cells at 800 × g for 6 min, resuspend them in serum-free culture medium, dilute the cell concentration to 2 × 10^5 cells/mL, and add 100 μL to each well of a 96-well plate.
-b. Serially dilute the test substance with serum-free culture medium, add 100 μL of each dilution to the corresponding wells of the 96-well plate, and incubate the plate for 48 h.
-c. After 48 h of incubation, remove the plate, add 20 μL of CCK-8 solution to each well, and incubate the plate again for 4 h.
-d. Measure the absorbance at 450 nm using a microplate reader and calculate cell viability.

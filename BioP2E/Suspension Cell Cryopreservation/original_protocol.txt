@@ -1,3 +1,0 @@
-a. After the cells have been cultured in the incubator for 3 days, centrifuge them at 800 × g for 6 min and discard the supernatant.
-b. Dilute the cells to 1 × 10^6 cells/mL using pre-cooled cell-freezing medium, and aliquot 1 mL into each cryovial.
-c. Immediately place the cryovials in a -80°C freezer. After 12 h of freezing, transfer them to a liquid-nitrogen storage tank.

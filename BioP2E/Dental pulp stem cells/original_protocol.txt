@@ -1,9 +1,0 @@
-Initial state: Dental pulp tissue has been obtained.
-
-(1) Transfer the dental pulp tissue into a culture dish. Add 3 mL of type I collagenase solution and 4 mL of dispase solution to digest the dental pulp tissue. Place the culture dish in an incubator and incubate at 37°C with 5% CO₂ for 1 h. Filter the digested tissue through a 70 μm cell strainer to obtain a single-cell suspension.
-
-(2) Wash the cells twice by centrifugation using DMEM culture medium. Centrifuge at 1,000 rpm for 5 min during each wash, and then perform cell counting.
-
-(3) Seed the cells into a 35 mm culture dish at a density of 1×10^3 cells/mL and culture them in an incubator at 37°C with 5% CO₂.
-
-(4) Remove the culture dish after 7 days.

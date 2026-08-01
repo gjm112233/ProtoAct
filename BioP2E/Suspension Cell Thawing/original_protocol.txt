@@ -1,4 +1,0 @@
-a. Remove the cryovial from the liquid-nitrogen storage tank and immediately place it in a preheated cell-thawing device.
-b. After the thawing cycle is complete, centrifuge the cells at 800 × g for 6 min and discard the supernatant.
-c. Resuspend the cells in 1 mL of serum-containing culture medium and transfer them to a culture dish containing 5 mL of serum-containing culture medium. Gently swirl the culture dish to distribute the cells evenly, and incubate it at 37°C with 5% CO2.
-d. When extensive cell clustering is observed, passage the cells. After 2-3 passages, the cells grow in a dispersed state and can be used for subsequent experiments.

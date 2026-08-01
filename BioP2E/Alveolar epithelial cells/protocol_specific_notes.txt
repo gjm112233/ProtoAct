@@ -1,7 +1,0 @@
-1. Like other laboratory devices, the shaking water bath requires separate operations for setting its parameters and starting the device. After the operation is completed, the container must be removed from the shaking water bath.
-2. After filtration through the 200-mesh nylon screen, an implicit screen-rinsing operation should be included.
-3. Before centrifugation in Step (3), the cell suspension must be transferred from the culture flask to a centrifuge tube.
-4. In Step (3), the washing procedure should generally follow this sequence: add the washing medium, shake or resuspend the cells, and remove the washing medium. It is assumed that centrifugation is not included in the washing procedure.
-5. After washing, DMEM culture medium containing 20% fetal bovine serum must be added, and the cells must be resuspended before cell counting.
-6. Cell dilution and cell seeding operations must be included after cell counting.
-7. After 24 h of culture in Step (4), the culture flask must be removed from the incubator, the culture medium must be replaced, and the flask must be returned to the incubator. The incubation parameters must then be set, and the incubator must be started.

@@ -1,6 +1,0 @@
-1. In Step (1), the volume of type I collagenase solution specified as equal to the volume of the adipose tissue should be interpreted as 4 mL based on the initial amount of 4 g of adipose tissue.
-2. As with other equipment, operation of the shaking water bath must include setting the operating parameters and starting the device.
-3. In Step (2), before the first centrifugation, the cell suspension must be transferred into a centrifuge tube.
-4. In Step (2), after filtration through the 200-mesh nylon screen, an additional operation for rinsing the nylon screen must be included.
-5. For the PBS centrifugation wash, because the preceding centrifugation step has already been followed by removal of the supernatant, the washing procedure should include the following operations: add PBS solution, resuspend the cells, centrifuge the suspension, and discard the supernatant.
-6. In Step (3), after 3 days of culture, the culture medium must be replaced. The culture flask must then be returned to the incubator, the incubation parameters must be set, and the incubator must be started.

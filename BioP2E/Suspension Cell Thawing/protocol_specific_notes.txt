@@ -1,1 +1,0 @@
-In Step (b), before centrifugation, an implicit operation should be included to transfer the cell suspension from the cell cryopreservation vial into a centrifuge tube.

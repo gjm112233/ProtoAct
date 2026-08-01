@@ -1,3 +1,0 @@
-a. After the cells have been cultured for 24 h, observe them. If extensive cell clustering is present, centrifuge the cells at 800 × g for 6 min and discard the supernatant.
-b. Resuspend the cells in 2 mL of serum-containing culture medium, and transfer 500 μL of the cell suspension into a culture dish containing 5 mL of serum-containing culture medium.
-c. Gently swirl the culture dish to distribute the cells evenly, and incubate it at 37°C with 5% CO2.

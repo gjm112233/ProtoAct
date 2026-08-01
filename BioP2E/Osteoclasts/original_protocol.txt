@@ -1,7 +1,0 @@
-Initial state: Split chicken bone shafts have been obtained.
-
-(1) Place the split bone shafts into a culture dish and rinse them three times with 20 mL of PBS, discarding the PBS after each rinse. After the final rinse, add 50 mL of PBS and place the culture dish in a shaking water bath at 37°C for 30 min to obtain a cell suspension.
-
-(2) Centrifuge the cell suspension at 650 × g for 10 min. Resuspend the cells in 5 mL of PBS, transfer the cell suspension into a 50 mL centrifuge tube, and centrifuge at 650 × g for 20 min.
-
-(3) Wash the cells twice with 10 mL of PBS, discarding the supernatant after each wash. After the final wash, add 20 mL of PBS. Perform cell counting using trypan blue, then dilute the cell suspension to 1×10^6 cells/mL using MEM culture medium containing 10% fetal bovine serum. Seed the cells into a culture flask and culture them at 37°C with 5% CO₂. After 24 h, replace the culture medium and return the culture flask to the incubator for continued culture.

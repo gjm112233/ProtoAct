@@ -1,7 +1,0 @@
-Initial state: 4 g of minced rat adipose tissue has been obtained.
-
-(1) Place the adipose tissue into an Erlenmeyer flask, add an equal volume of 0.1% type I collagenase solution, and incubate in a shaking water bath at 37°C for 1 h.
-
-(2) Centrifuge at 1,200 rpm for 5 min. Discard the floating material and supernatant, and resuspend the cells in DMEM/F12 culture medium containing 10% fetal bovine serum and 1% penicillin-streptomycin. Filter the suspension through a 200-mesh nylon screen, centrifuge at 1,000 rpm for 5 min, and discard the supernatant. Wash the cells once with PBS by centrifugation.
-
-(3) Resuspend the cells in DMEM/F12 culture medium containing 10% FBS and seed them into a 25 cm² culture flask. Culture the cells in an incubator at 37°C with 5% CO₂. After 3 days, replace the culture medium and continue culturing.

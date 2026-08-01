@@ -1,7 +1,0 @@
-Initial state: MDA-MB-231 cells are cultured in DMEM supplemented with 10% FBS.
-
-a. Aspirate the culture medium from the culture dish and rinse the cells with PBS to remove residual medium.
-
-b. Add trypsin and gently shake the dish to distribute it evenly. When the cells become rounded and detach, add culture medium to terminate the digestion.
-
-c. Centrifuge at 800 × g for 6 min, discard the supernatant, and resuspend the cells. Transfer one-third of the resuspended cells into 6 mL of fresh culture medium for continued culture.

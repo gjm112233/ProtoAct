@@ -1,2 +1,0 @@
-1. In Step (1), after filtration through the cell strainer, the strainer must be rinsed using DMEM culture medium.
-2. In Step (2), the cells must be washed twice by centrifugation using DMEM culture medium. Each centrifugation wash should include the following operations: centrifuge the cell suspension, discard the supernatant, add DMEM culture medium, and resuspend the cells. After one complete washing cycle, an additional subtask should specify that the corresponding subtasks are repeated until a total of two centrifugation washes has been completed.

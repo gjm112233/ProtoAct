@@ -1,6 +1,0 @@
-1. In Step 1, after washing the liver tissue fragments with D-Hanks solution, the washing solution must be aspirated using a pipette.
-2. Before centrifugation in Step 1, the cleaned liver tissue fragments must be transferred into a centrifuge tube, and D-Hanks solution must be added to the tube before centrifugation begins.
-3. Before the 12-min incubation at 37°C in Step 1, the liver tissue fragments must be transferred from the centrifuge tube to a culture dish.
-4. The three washing cycles with DMEM culture medium in Step 1 must follow this sequence: add DMEM culture medium, gently swirl the culture dish, aspirate the medium, and dispense it into the waste container. Repeat this sequence three times.
-5. After a growth halo is observed in Step 1, the culture medium in the culture flask must be replaced. First, aspirate the original culture medium using a pipette and dispense it into the waste container, then add 6 mL of culture medium containing 50 mL/L BS.
-6. Step 2 includes an implicit cell dilution operation after cell counting.

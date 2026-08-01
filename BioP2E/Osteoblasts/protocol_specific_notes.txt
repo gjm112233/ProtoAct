@@ -1,3 +1,0 @@
-1. In Step (1), the washing procedure should include the following operations: add the culture medium containing fetal bovine serum, gently shake the culture dish, and remove the culture medium.
-2. Before the first centrifugation, the digestion solution in the culture dish must be transferred into a centrifuge tube.
-3. At the end of Step (5), the culture flask must be placed inside the incubator, the incubation parameters must be set, and the incubator must be started.

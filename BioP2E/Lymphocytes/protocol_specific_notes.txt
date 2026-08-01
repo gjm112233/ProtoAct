@@ -1,7 +1,0 @@
-1. In Step (1), a culture dish containing HBSS is already available. The lymph node should therefore be transferred directly into this culture dish.
-2. In Step (1), the tissue-cutting operation should be parsed as: use surgical tools to cut the lymph node into pieces of approximately 1 mm³. After cutting, a monitor condition should confirm that the lymph node has been completely cut into pieces before the culture dish is placed in the shaking water bath.
-3. In Step (2), after filtration through the 100-mesh strainer, the inner surface of the strainer must be rinsed.
-4. In Step (2), the cells must be washed twice by centrifugation. Each washing cycle should include the following operations: centrifuge the cell suspension, discard the supernatant, add 5 mL of DMEM culture medium, and resuspend the cells. After one complete washing cycle, an additional subtask should specify that the corresponding subtasks are repeated until a total of two centrifugation washes has been completed.
-5. After 30 min of culture, the culture medium must be replaced, followed by an implicit operation that transfers the cell suspension into a centrifuge tube.
-6. The supernatant must be discarded after every centrifugation operation.
-7. At the end of Step (5), after 48 h of culture, the culture dish must be removed from the incubator.

@@ -1,3 +1,0 @@
-1. Like other laboratory devices, the shaking water bath must include separate operations for setting its parameters and starting the device.
-2. After 6 days of culture, the culture flask must be removed from the incubator and placed in the microscopic observation area for observation under a microscope. After the specified cell state is observed, the culture flask must be moved to the work area. The same procedure must be followed after the second culture period.
-3. After the second culture period, twice the original volume of RPMI 1640 culture medium containing 10% newborn calf serum must be added. The doubled volume should be 4 mL.
