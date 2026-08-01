@@ -1,0 +1,9 @@
+Initial state: Approximately 3 g of minced mouse prostate tissue has been prepared.
+
+(1) Transfer the minced prostate tissue into a 25 cm² culture flask and add collagenase at a ratio of 1 mL per 0.1 g of tissue, corresponding to approximately 30 mL for 3 g of tissue. Incubate the flask in a shaking water bath at 37°C for 1 h. Centrifuge at 100 × g for 5 min and discard the supernatant.
+
+(2) Resuspend the cells in 5 mL of MSS containing 5% serum. Filter the cell suspension sequentially through 253 μm, 150 μm, 100 μm, and 41 μm nylon screens. After each filtration, rinse the screen with 5 mL of MSS containing 5% serum. Collect the cells by centrifugation at 100 × g for 5 min and resuspend them in 5 mL of WAJC 404 culture medium. Count the cells using trypan blue solution and adjust the cell density to (4 \times 10^6) cells/mL.
+
+(3) Seed 50 μL of the cell suspension into each well of a 24-well culture plate, and add 1 mL of WAJC 404 culture medium to each well.
+
+(4) Culture the cells at 37°C with 5% CO₂. Replace the culture medium on Days 3 and 5. The cells should reach confluence by Day 7.

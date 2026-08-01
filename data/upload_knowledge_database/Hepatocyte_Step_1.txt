@@ -1,0 +1,63 @@
+﻿Hepatocyte Step 1:
+Cut liver tissue fragments have been prepared and placed in a culture dish.
+(1) Wash the residual blood from the liver tissue fragments with D-Hanks solution. After washing, centrifuge at 800 r/min for 4 min, discard the supernatant, add Digestion Solution I, and incubate at 37°C for 12 min. Then wash three times with DMEM culture medium to remove the trypsin remaining in the digestion solution. Attach the liver tissue fragments to a 25 cm² culture flask, add a small amount of culture medium containing 100 mL/L BS, and incubate at 37°C with 5% CO2 for 3 h. Then add another 6 mL of culture medium containing 100 mL/L BS and continue incubation. After a cell outgrowth halo appears around the tissue fragments, replace the medium with culture medium containing 50 mL/L BS and continue incubation at 37°C with 5% CO2.
+
+Parsing Result:
+
+Monitor Condition: Cut liver tissue fragments and D-Hanks solution have been prepared.
+Subtask 1: Use a pipette to aspirate 2 mL D-Hanks solution and dispense it into the culture dish containing the liver tissue fragments.
+Subtask 2: Use a pipette to aspirate the blood-contaminated solution from the culture dish and dispense it into the waste container.
+
+Monitor Condition: The supernatant in the culture dish is nearly clear; D-Hanks solution and a centrifuge tube have been prepared.
+Subtask 3: Use ophthalmic forceps to transfer the washed liver tissue fragments from the culture dish to the centrifuge tube.
+Subtask 4: Replace the pipette tip, aspirate 2 mL D-Hanks solution, and dispense it into the centrifuge tube.
+Subtask 5: Place the centrifuge tube into a rotor slot of the centrifuge.
+Subtask 6: Set the centrifuge to 800 r/min for 4 min using the control panel.
+Subtask 7: Start the centrifuge.
+
+Monitor Condition: Wait until the centrifuge has completed its 4 min run.
+Subtask 8: Remove the centrifuge tube from the centrifuge and secure it in the workspace.
+Subtask 9: Replace the pipette tip, aspirate the supernatant from the centrifuge tube, and dispense it into the waste container.
+
+Monitor Condition: The supernatant in the centrifuge tube has been almost completely removed; Digestion Solution I and a culture dish have been prepared.
+Subtask 10: Replace the pipette tip, aspirate 2 mL Digestion Solution I, and dispense it into the centrifuge tube.
+Subtask 11: Transfer the liver tissue fragments together with the digestion solution from the centrifuge tube to the culture dish.
+Subtask 12: Place the culture dish steadily into the incubator.
+Subtask 13: Set the incubator temperature to 37°C and the CO2 concentration to 5% using the control panel.
+Subtask 14: Start the incubator.
+
+Monitor Condition: The culture dish has been incubated for 12 min; DMEM culture medium has been prepared.
+Subtask 15: Remove the culture dish from the incubator and place it steadily in the workspace.
+Subtask 16: Replace the pipette tip, aspirate 2 mL of DMEM culture medium, and dispense it into the culture dish.
+Subtask 17: Gently swirl the culture dish.
+Subtask 18: Use a pipette to aspirate the wash solution from the culture dish and dispense it into the waste container.
+Subtask 19: Repeat Subtasks 16-18 three times in total.
+
+Monitor Condition: The liver tissue fragments have been washed three times; a 25 cm² culture flask and culture medium containing 100 mL/L BS have been prepared.
+Subtask 20: Use ophthalmic forceps to attach the liver tissue fragments from the culture dish to the surface of the 25 cm² culture flask.
+Subtask 21: Replace the pipette tip, aspirate culture medium containing 100 mL/L BS, and dispense it into the culture flask until the liver tissue fragments are covered.
+Subtask 22: Place the culture flask steadily into the incubator.
+Subtask 23: Set the incubator temperature to 37°C and the CO2 concentration to 5% using the control panel.
+Subtask 24: Start the incubator.
+
+Monitor Condition: The culture flask has been incubated for 3 h; culture medium containing 100 mL/L BS has been prepared.
+Subtask 25: Remove the culture flask from the incubator and place it steadily in the workspace.
+Subtask 26: Replace the pipette tip, aspirate 6 mL of culture medium containing 100 mL/L BS, and dispense it into the culture flask.
+Subtask 27: Place the culture flask steadily into the incubator.
+Subtask 28: Set the incubator temperature to 37°C and the CO2 concentration to 5% using the control panel.
+Subtask 29: Start the incubator.
+
+Monitor Condition: The culture flask has been incubated for 24 h.
+Subtask 30: Remove the culture flask from the incubator and place it steadily in the microscope observation area.
+Subtask 31: Observe the liver tissue fragments in the culture flask using an inverted microscope.
+
+Monitor Condition: Inverted-microscope observation shows a transparent layer of cells extending outward around the tissue fragments, forming a cell outgrowth halo.
+Subtask 32: Move the culture flask steadily to the workspace.
+Subtask 33: Replace the pipette tip, aspirate the culture medium from the culture flask, and dispense it into the waste container.
+
+Monitor Condition: The culture medium in the culture flask has been almost completely removed; culture medium containing 50 mL/L BS has been prepared.
+Subtask 34: Replace the pipette tip, aspirate 6 mL of culture medium containing 50 mL/L BS, and dispense it into the culture flask.
+Subtask 35: Place the culture flask steadily into the incubator.
+Subtask 36: Set the incubator temperature to 37°C and the CO2 concentration to 5% using the control panel.
+Subtask 37: Start the incubator.
+

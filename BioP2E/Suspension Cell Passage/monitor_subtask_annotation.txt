@@ -1,0 +1,27 @@
+Monitor Condition: The cells have been cultured in the incubator for 24 h.
+Subtask 1: Remove the culture dish from the incubator.
+Subtask 2: Place the culture dish under an inverted microscope for observation.
+
+Monitor Condition: If extensive cell clustering is observed, proceed with the following subtasks; otherwise, return the culture dish to the incubator and continue culturing at 37°C with 5% CO2.
+Subtask 3: Move the culture dish to the workspace.
+Subtask 4: Use a pipette to aspirate the liquid from the culture dish and slowly dispense it back. Repeat this pipetting cycle 3-5 times to form a cell suspension.
+Subtask 5: Use a pipette to aspirate all of the cell suspension from the culture dish and transfer it to a centrifuge tube.
+Subtask 6: Place the centrifuge tube into a rotor slot of the centrifuge.
+Subtask 7: Set the centrifuge to 800 × g for 6 min using the control panel.
+Subtask 8: Start the centrifuge.
+
+Monitor Condition: Wait until the centrifuge has completed its 6 min run.
+Subtask 9: Remove the centrifuge tube from the centrifuge.
+Subtask 10: Use a pipette to aspirate the supernatant from the centrifuge tube and dispense it into the waste container.
+
+Monitor Condition: The supernatant in the centrifuge tube has been almost completely removed.
+Subtask 11: Use a pipette to aspirate 2 mL of serum-containing culture medium and dispense it into the centrifuge tube.
+Subtask 12: Use a pipette to aspirate the liquid from the centrifuge tube and slowly dispense it back. Repeat this pipetting cycle 3-5 times to form a cell suspension.
+
+Monitor Condition: The cell pellet at the bottom of the centrifuge tube has completely dispersed; a culture dish and serum-containing culture medium have been prepared.
+Subtask 13: Use a pipette to aspirate 5 mL of serum-containing culture medium and dispense it into the culture dish.
+Subtask 14: Use a pipette to aspirate 500 μL of cell suspension from the centrifuge tube and transfer it into the culture dish containing 5 mL of culture medium.
+Subtask 15: Gently swirl the culture dish.
+Subtask 16: Place the culture dish into the incubator and close the incubator door.
+Subtask 17: Set the incubator temperature to 37°C and the CO2 concentration to 5% using the control panel.
+Subtask 18: Start the incubator.

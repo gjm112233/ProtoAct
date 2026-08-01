@@ -1,0 +1,36 @@
+﻿Original Procedure:
+a. Remove the cryovial from the liquid-nitrogen storage tank and immediately place it in a preheated cell-thawing device.
+b. After the thawing cycle is complete, centrifuge the cells at 800 × g for 6 min and discard the supernatant.
+c. Resuspend the cells in 1 mL of serum-containing culture medium and transfer them to a culture dish containing 5 mL of serum-containing culture medium. Gently swirl the culture dish to distribute the cells evenly, and incubate it at 37°C with 5% CO2.
+d. When extensive cell clustering is observed, passage the cells. After 2-3 passages, the cells grow in a dispersed state and can be used for subsequent experiments.
+
+
+Parsing Result:
+
+Monitor Condition: The cell-thawing device has been preheated.
+Subtask 1: Remove the cryovial from the liquid-nitrogen storage tank, immediately place it in the cell-thawing device.
+Subtask 2: Start the cell-thawing device.
+
+Monitor Condition: The cell-thawing cycle has been completed.
+Subtask 3: Remove the cryovial from the cell-thawing device and secure it in the workspace.
+Subtask 4: Use a pipette to aspirate all liquid from the cryovial and dispense it into a centrifuge tube.
+Subtask 5: Place the centrifuge tube into a rotor slot of the centrifuge.
+Subtask 6: Set the centrifuge to 800 × g for 6 min using the control panel.
+Subtask 7: Start the centrifuge.
+
+Monitor Condition: Wait until the centrifuge has completed its 6 min run.
+Subtask 8: Remove the centrifuge tube from the centrifuge and secure it in the workspace.
+Subtask 9: Use a pipette to aspirate the supernatant from the centrifuge tube and dispense it into the waste container.
+
+Monitor Condition: The supernatant in the centrifuge tube has been almost completely removed.
+Subtask 10: Use a pipette to aspirate 1 mL of serum-containing culture medium and dispense it into the centrifuge tube.
+Subtask 11: Use a pipette to aspirate the liquid from the centrifuge tube and slowly dispense it back. Repeat this pipetting cycle 3-5 times to resuspend the cells.
+
+Monitor Condition: The cell pellet at the bottom of the centrifuge tube has completely dispersed; a culture dish and serum-containing culture medium have been prepared.
+Subtask 12: Use a pipette to aspirate 5 mL of serum-containing culture medium and dispense it into the culture dish.
+Subtask 13: Use a pipette to aspirate the cell suspension from the centrifuge tube and transfer it to the culture dish.
+Subtask 14: Gently swirl the culture dish.
+Subtask 15: Place the culture dish into the incubator and close the incubator door.
+Subtask 16: Set the incubator temperature to 37°C and the CO2 concentration to 5% using the control panel.
+Subtask 17: Start the incubator.
+

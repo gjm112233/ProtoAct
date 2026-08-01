@@ -1,0 +1,68 @@
+{
+  "stages": [
+    {
+      "monitor": [
+        {"type": "resource_ready", "prepare": "adipose tissue fragments (1 mm³), centrifuge tube, PBS solution"}
+      ],
+      "subtasks": [
+        {"action": "transfer", "object": "adipose tissue fragments", "source": "workspace", "target": "centrifuge tube"},
+        {"action": "aspirate", "object": "PBS solution", "amount": "2mL"},
+        {"action": "dispense", "place": "centrifuge tube", "amount": "2mL"},
+        {"action": "put_into_centrifuge", "object": "centrifuge tube"},
+        {"action": "set_centrifuge", "speed": "1000r/min", "time": "10min"},
+        {"action": "start_device", "object": "centrifuge"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "wait_time", "time": "10min", "device": "centrifuge"},
+        {"type": "resource_ready", "prepare": "culture flask"}
+      ],
+      "subtasks": [
+        {"action": "take_out_centrifuge", "object": "centrifuge tube"},
+        {"action": "transfer", "object": "fat particles floating on the upper layer", "source": "centrifuge tube", "target": "bottom wall of culture flask"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "wait_time", "time": "5min"},
+        {"type": "resource_ready", "prepare": "DMEM medium"}
+      ],
+      "subtasks": [
+        {"action": "aspirate", "object": "DMEM medium", "amount": "2mL"},
+        {"action": "dispense", "place": "culture flask", "amount": "2mL"},
+        {"action": "put_into_incubator", "object": "culture flask"},
+        {"action": "set_incubator", "CO2": "5%", "temp": "37℃"},
+        {"action": "start_device", "device": "incubator"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "wait_time", "device": "incubator", "time": "5d"}
+      ],
+      "subtasks": [
+        {"action": "take_out_incubator", "object": "culture flask"},
+        {"action": "microscopic_observe", "object": "adipocytes at the bottom of culture flask"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "a large number of short spindle-shaped cells appear at the bottom of culture flask"},
+        {"type": "resource_ready", "prepare": "DMEM medium"}
+      ],
+      "subtasks": [
+        {"action": "transfer", "object": "culture flask", "source": "microscopic observation area", "target": "workspace"},
+        {"action": "discard_medium", "object": "culture flask"},
+        {"action": "aspirate", "object": "DMEM medium", "amount": "2mL"},
+        {"action": "dispense", "place": "culture flask", "amount": "2mL"},
+        {"action": "put_into_incubator", "object": "culture flask"},
+        {"action": "set_incubator", "CO2": "5%", "temp": "37℃"},
+        {"action": "start_device", "device": "incubator"}
+      ]
+    }
+  ]
+}

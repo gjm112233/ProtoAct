@@ -1,0 +1,11 @@
+Initial state: A thoroughly washed neonatal bovine thoracic aorta has been prepared.
+
+(1) Add the mixed digestion solution to a culture dish and immerse the aorta in the solution. Incubate in a water bath at 37°C for 30 min.
+
+(2) Remove the aorta and add M199 culture medium containing 20% fetal bovine serum to terminate digestion.
+
+(3) Centrifuge the collected digestion solution at 1,000 rpm for 5 min, and wash the cells twice with culture medium.
+
+(4) Collect the cells, resuspend them in culture medium, and seed them into gelatin-coated culture dishes.
+
+(5) Place the culture dishes in an incubator and culture the cells at 37°C with 5% CO₂. After the cells reach confluence, replace the culture medium and continue culturing.

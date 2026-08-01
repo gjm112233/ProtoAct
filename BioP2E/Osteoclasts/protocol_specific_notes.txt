@@ -1,0 +1,5 @@
+1. In Step (1), each of the three PBS rinses should include the following operations: add PBS, gently shake the culture dish, and discard the solution. After one complete rinsing cycle, an additional subtask should specify that the corresponding subtasks are repeated until a total of three rinses has been completed.
+2. In Step (2), before the first centrifugation, the cell suspension must be transferred from the culture dish into a centrifuge tube.
+3. In Step (2), the supernatant must be discarded after each of the two centrifugation steps.
+4. In Step (3), each of the two PBS rinses should include the following operations: add PBS, gently shake the centrifuge tube, and discard the supernatant. After one complete rinsing cycle, an additional subtask should specify that the corresponding subtasks are repeated until a total of two rinses has been completed.
+5. In Step (3), after 24 h of culture, the culture flask must be removed from the incubator and the culture medium must be replaced. The culture flask must then be returned to the incubator, the incubation parameters must be set, and the incubator must be started.

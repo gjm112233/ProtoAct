@@ -1,0 +1,256 @@
+{
+  "stages": [
+    {
+      "monitor": [
+        {"type": "resource_ready", "prepare": "sectioned liver tissue fragments, D-Hanks solution"}
+      ],
+      "subtasks": [
+        {"action": "aspirate", "object": "D-Hanks", "amount": "2mL"},
+        {"action": "dispense", "place": "culture dish containing liver tissue fragments", "amount": "2mL"},
+        {"action": "discard_medium", "object": "culture dish"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "the liver tissue fragments are thoroughly washed"},
+        {"type": "resource_ready", "prepare": "centrifuge tube, D-Hanks solution"}
+      ],
+      "subtasks": [
+        {"action": "transfer", "object": "liver tissue fragments", "source": "culture dish", "target": "centrifuge tube"},
+        {"action": "aspirate", "object": "D-Hanks", "amount": "2mL"},
+        {"action": "dispense", "place": "centrifuge tube", "amount": "2mL"},
+        {"action": "put_into_centrifuge", "object": "centrifuge tube"},
+        {"action": "set_centrifuge", "speed": "800r/min", "time": "4min"},
+        {"action": "start_device", "device": "centrifuge"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "wait_time", "time": "4min", "device": "centrifuge"}
+      ],
+      "subtasks": [
+        {"action": "take_out_centrifuge", "object": "centrifuge tube"},
+        {"action": "discard_supernatant", "object": "centrifuge tube"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "supernatant removed"},
+        {"type": "resource_ready", "prepare": "digestion solution I, culture dish"}
+      ],
+      "subtasks": [
+        {"action": "aspirate", "object": "digestion solution I", "amount": "2mL"},
+        {"action": "dispense", "place": "centrifuge tube", "amount": "2mL"},
+        {"action": "transfer", "object": "liver tissue fragments","source": "centrifuge tube", "target": "culture dish"},
+        {"action": "transfer_liquid", "source": "centrifuge tube", "target": "culture dish"},
+        {"action": "put_into_incubator", "object": "culture dish"},
+        {"action": "set_incubator", "CO2": "5%", "temp": "37℃"},
+        {"action": "start_device", "device": "incubator"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "wait_time", "device": "incubator", "time": "12min"},
+        {"type": "resource_ready", "prepare": "DMEM medium"}
+
+      ],
+      "subtasks": [
+        {"action": "take_out_incubator", "object": "culture dish"},
+        {"action": "aspirate", "object": "DMEM medium", "amount": "2mL"},
+        {"action": "dispense", "place": "culture dish", "amount": "2mL"},
+        {"action": "shake", "object": "culture dish"},
+        {"action": "discard_medium", "object": "culture dish"},
+        {"action": "repeat", "back": "aspirate", "count": 2}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "resource_ready", "prepare": "25 cm² culture flask, medium supplemented with 100 mL/L BS"}
+      ],
+      "subtasks": [
+        {"action": "transfer", "object": "liver tissue fragments","source": "culture dish", "target": "25 cm² culture flask"},
+        {"action": "aspirate", "object": "medium supplemented with 100 mL/L BS", "amount": "2mL"},
+        {"action": "dispense", "place": "25 cm² culture flask", "amount": "2mL"},
+        {"action": "put_into_incubator", "object": "culture dish"},
+        {"action": "set_incubator", "CO2": "5%", "temp": "37℃"},
+        {"action": "start_device", "device": "incubator"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "wait_time", "device": "incubator", "time": "24h"}
+      ],
+      "subtasks": [
+        {"action": "take_out_incubator", "object": "culture flask"},
+        {"action": "microscopic_observe", "object": "liver tissue fragments in the culture flask"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "a halo of cell outgrowth appears around the tissue fragments"}
+      ],
+      "subtasks": [
+        {"action": "transfer", "object": "culture flask", "source": "microscopic observation area", "target": "workspace"},
+        {"action": "discard_medium", "object": "culture flask"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "medium in the culture flask removed"},
+        {"type": "resource_ready", "prepare": "medium supplemented with 50 mL/L BS"}
+      ],
+      "subtasks": [
+        {"action": "aspirate", "object": "medium supplemented with 50 mL/L BS", "amount": "6mL"},
+        {"action": "dispense", "place": "culture flask", "amount": "6mL"},
+        {"action": "put_into_incubator", "object": "culture flask"},
+        {"action": "set_incubator", "CO2": "5%", "temp": "37℃"},
+        {"action": "start_device", "device": "incubator"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "wait_time", "device": "incubator", "time": "24h"}
+      ],
+      "subtasks": [
+        {"action": "take_out_incubator", "object": "culture flask"},
+        {"action": "microscopic_observe", "object": "liver tissue fragments in the culture flask"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "wait_time", "device": "incubator", "time": "24h"}
+      ],
+      "subtasks": [
+        {"action": "take_out_incubator", "object": "culture flask"},
+        {"action": "microscopic_observe", "object": "liver tissue fragments in the culture flask"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "cells reach full confluence on the bottom of the culture flask"},
+        {"type": "resource_ready", "prepare": "digestion solution II"}
+      ],
+      "subtasks": [
+        {"action": "transfer", "object": "culture flask", "source": "microscopic observation area", "target": "workspace"},
+        {"action": "aspirate", "object": "digestion solution II", "amount": "2mL"},
+        {"action": "dispense", "place": "culture flask", "amount": "2mL"},
+        {"action": "put_into_incubator", "object": "culture flask"},
+        {"action": "set_incubator", "CO2": "5%", "temp": "4℃"},
+        {"action": "start_device", "device": "incubator"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "wait_time", "device": "incubator", "time": "12h"}
+      ],
+      "subtasks": [
+        {"action": "take_out_incubator", "object": "culture flask"},
+        {"action": "discard_medium", "object": "culture flask"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "medium in the culture flask removed"},
+        {"type": "resource_ready", "prepare": "medium supplemented with 100 mL/L BS"}
+      ],
+      "subtasks": [
+        {"action": "aspirate", "object": "medium supplemented with 100 mL/L BS", "amount": "2mL"},
+        {"action": "dispense", "place": "culture flask", "amount": "2mL"},
+        {"action": "resuspension", "object": "culture flask"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "resource_ready", "prepare": "200-mesh nylon screen, centrifuge tube"}
+      ],
+      "subtasks": [
+        {"action": "filter_cell_suspension", "source": "culture flask", "filter_tool": "200-mesh nylon screen", "target": "centrifuge tube"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "cell suspension from culture flask filtered"},
+        {"type": "resource_ready", "prepare": "medium supplemented with 100 mL/L BS"}
+      ],
+      "subtasks": [
+        {"action": "aspirate", "object": "medium supplemented with 100 mL/L BS", "amount": "2mL"},
+        {"action": "dispense", "place": "the inner surface of the 200-mesh nylon screen", "amount": "2mL"},
+        {"action": "repeat", "back": "aspirate", "count": "1"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "resource_ready", "prepare": "centrifuge tube containing the filtered cell suspension"}
+      ],
+      "subtasks": [
+        {"action": "put_into_centrifuge", "object": "centrifuge tube"},
+        {"action": "set_centrifuge", "force": "50g", "time": "4min"},
+        {"action": "start_device", "device": "centrifuge"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "wait_time", "time": "4min", "device": "centrifuge"},
+        {"type": "resource_ready", "prepare": "trypan blue solution, hemocytometer, empty tube"}
+      ],
+      "subtasks": [
+        {"action": "take_out_centrifuge", "object": "centrifuge tube"},
+        {"action": "count_cells_trypan_blue", "source": "centrifuge tube"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "cell viability is at least 80%"},
+        {"type": "resource_ready", "prepare": "medium supplemented with 100 mL/L BS, culture dish"}
+      ],
+      "subtasks": [
+        {"action": "cell_dilution", "target": "centrifuge tube", "diluent": "medium supplemented with 100 mL/L BS", "density": "5×10^5 cell/mL"},
+        {"action": "cell_seed", "source": "centrifuge tube", "plate": "culture dish", "volume": "2mL"},
+        {"action": "put_into_incubator", "object": "culture dish"},
+        {"action": "set_incubator", "CO2": "5%", "temp": "37℃"},
+        {"action": "start_device", "device": "incubator"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "wait_time", "device": "incubator", "time": "24h"}
+      ],
+      "subtasks": [
+        {"action": "take_out_incubator", "object": "culture dish"},
+        {"action": "microscopic_observe", "object": "cells in culture dish"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "cells reach full confluence on the bottom of the culture dish"},
+        {"type": "resource_ready", "prepare": "medium supplemented with 50 mL/L BS, culture dish"}
+      ],
+      "subtasks": [
+        {"action": "transfer", "object": "culture dish", "source": "microscopic observation area", "target": "workspace"},
+        {"action": "discard_medium", "object": "culture dish"},
+        {"action": "aspirate", "object": "medium supplemented with 50 mL/L BS", "amount": "2mL"},
+        {"action": "dispense", "place": "culture dish", "amount": "2mL"}
+      ]
+    }
+  ]
+}

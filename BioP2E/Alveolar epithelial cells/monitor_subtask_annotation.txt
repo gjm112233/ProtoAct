@@ -1,0 +1,74 @@
+Monitor Condition: The washed and minced mouse lung tissue is placed in a beaker containing 4 mL of DNase. Fetal bovine serum, Alveolar Lavage Solution II, and a flask are available.
+Subtask 1: Use a pipette to aspirate 5 mL of fetal bovine serum and add it to the beaker.
+Subtask 2: Replace the pipette tip. Use a pipette to aspirate 20 mL of Alveolar Lavage Solution II and add it to the beaker.
+Subtask 3: Use a pipette to transfer all the liquid and tissue from the beaker into the flask.
+Subtask 4: Place the flask securely in the shaking water bath.
+Subtask 5: Set the shaking water bath to 37°C for 5 min using the control panel.
+Subtask 6: Start the shaking water bath.
+
+Monitor Condition: The shaking water bath has completed the 5-min operation. A 200-mesh nylon screen and a centrifuge tube are available.
+Subtask 7: Remove the flask from the shaking water bath.
+Subtask 8: Install the 200-mesh nylon screen on the centrifuge tube.
+Subtask 9: Replace the pipette tip. Use a pipette to aspirate the cell suspension from the flask.
+Subtask 10: Move the pipette above the 200-mesh nylon screen and slowly press the plunger to dispense the cell suspension dropwise onto the nylon screen for filtration.
+
+Monitor Condition: Most of the liquid in the flask has been filtered. DMEM culture medium is available.
+Subtask 11: Replace the pipette tip. Use a pipette to aspirate 2 mL of DMEM culture medium and dispense it dropwise onto the inner surface of the 200-mesh nylon screen for washing.
+
+Monitor Condition: Most of the cell suspension in the flask has been filtered, and the filtered cell suspension has been collected in the centrifuge tube.
+Subtask 12: Place the centrifuge tube into a rotor position in the centrifuge.
+Subtask 13: Set the centrifuge to 400 × g for 5 min using the centrifuge control panel.
+Subtask 14: Start the centrifuge.
+
+Monitor Condition: The centrifugation has been completed after 5 min.
+Subtask 15: Remove the centrifuge tube from the centrifuge and place it securely in the work area.
+Subtask 16: Replace the pipette tip. Use a pipette to aspirate the supernatant from the centrifuge tube and dispense it into the waste container.
+
+Monitor Condition: Most of the supernatant has been removed from the centrifuge tube. A culture flask containing DMEM culture medium is available.
+Subtask 17: Replace the pipette tip. Use a pipette to aspirate 2 mL of serum-free DMEM culture medium and add it to the centrifuge tube.
+Subtask 18: Insert the pipette tip below the liquid surface in the centrifuge tube, slowly press and release the plunger, and repeat the pipetting process 3–5 times to resuspend the cell suspension.
+Subtask 19: Use a pipette to transfer all the cell suspension from the centrifuge tube into the culture flask containing DMEM.
+Subtask 20: Place the culture flask securely inside the incubator.
+Subtask 21: Set the incubator temperature to 37°C and the CO₂ concentration to 5% using the incubator control panel.
+Subtask 22: Start the incubator.
+
+Monitor Condition: The cells have been cultured for 3 h. A centrifuge tube is available.
+Subtask 23: Remove the culture flask from the incubator and place it securely in the work area.
+Subtask 24: Use a pipette to transfer all the cell suspension from the culture flask into the centrifuge tube.
+Subtask 25: Place the centrifuge tube into a rotor position in the centrifuge.
+Subtask 26: Set the centrifuge to 400 × g for 10 min using the centrifuge control panel.
+Subtask 27: Start the centrifuge.
+
+Monitor Condition: The centrifugation has been completed after 10 min.
+Subtask 28: Remove the centrifuge tube from the centrifuge and place it securely in the work area.
+Subtask 29: Replace the pipette tip. Use a pipette to aspirate the supernatant from the centrifuge tube and dispense it into the waste container.
+
+Monitor Condition: Most of the supernatant has been removed from the centrifuge tube. Serum-free DMEM culture medium is available.
+Subtask 30: Replace the pipette tip. Use a pipette to aspirate 2 mL of serum-free DMEM culture medium and add it to the centrifuge tube.
+Subtask 31: Gently shake the centrifuge tube.
+Subtask 32: Use a pipette to aspirate the culture medium from the centrifuge tube and dispense it into the waste container.
+
+Monitor Condition: Most of the liquid has been removed from the centrifuge tube. DMEM culture medium containing 20% fetal bovine serum is available.
+Subtask 33: Replace the pipette tip. Use a pipette to aspirate 2 mL of DMEM culture medium containing 20% fetal bovine serum and add it to the centrifuge tube.
+Subtask 34: Insert the pipette tip below the liquid surface, slowly press and release the plunger, and repeat the pipetting process 3–5 times to resuspend the cell suspension.
+
+Monitor Condition: Trypan blue staining solution, a hemocytometer, and an empty test tube are available.
+Subtask 35: Replace the pipette tip. Use a pipette to aspirate 10 μL of the cell suspension and add it to the empty test tube.
+Subtask 36: Replace the pipette tip. Use a pipette to aspirate 10 μL of trypan blue staining solution and add it to the same test tube.
+Subtask 37: Replace the pipette tip. Use a pipette to aspirate 10 μL of the mixture from the test tube and add it to the counting chamber of the hemocytometer.
+Subtask 38: Place the hemocytometer under a microscope, observe and count the numbers of viable and dead cells, and calculate the proportion of viable cells.
+
+Monitor Condition: Based on the counting results, the required volume of additional culture medium has been calculated as V mL. A culture flask and DMEM culture medium containing 20% fetal bovine serum are available.
+Subtask 39: Replace the pipette tip. Use a pipette to aspirate V mL of RPMI 1640 culture medium containing 20% newborn calf serum and add it to the centrifuge tube to dilute the cell suspension to the specified concentration.
+Subtask 40: Replace the pipette tip. Use a pipette to aspirate an appropriate volume of the cell suspension from the centrifuge tube and seed it into the culture flask.
+Subtask 41: Place the culture flask securely inside the incubator.
+Subtask 42: Set the incubator temperature to 37°C and the CO₂ concentration to 5% using the incubator control panel.
+Subtask 43: Start the incubator.
+
+Monitor Condition: The cells have been cultured for 24 h. DMEM culture medium containing 20% fetal bovine serum is available.
+Subtask 44: Remove the culture flask from the incubator and place it securely in the work area.
+Subtask 45: Use a pipette to aspirate the original culture medium from the culture flask and dispense it into the waste container.
+Subtask 46: Replace the pipette tip. Aspirate 2 mL of DMEM culture medium containing 20% fetal bovine serum and add it to the culture flask.
+Subtask 47: Place the culture flask securely inside the incubator.
+Subtask 48: Set the incubator temperature to 37°C and the CO₂ concentration to 5% using the incubator control panel.
+Subtask 49: Start the incubator.

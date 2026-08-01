@@ -1,0 +1,217 @@
+Monitoring Condition Set
+
+1. device_state
+- Description: Represents a required device state that must be satisfied before subsequent actions can proceed.
+- Parameters:
+    device: specified device,
+    state: required or observed state of the device
+
+2. wait_time
+- Description: Represents a required waiting period before subsequent actions can proceed.
+- Parameters:
+    time: waiting duration,
+    device: device associated with the waiting period (optional)
+
+3. visual_state
+- Description: Represents a visually observable condition or phenomenon that must be confirmed before subsequent actions can proceed.
+- Parameters:
+    observe: visually observed condition or phenomenon
+
+4. resource_ready
+- Description: Represents the resources that must be prepared before subsequent actions can proceed.
+- Parameters:
+    prepare: prepared resources, such as containers, devices, instruments, or solutions
+
+
+Action Primitive Set
+
+General Operations
+
+1. pick_and_place
+- Description: Pick up an object and place it at a specified location.
+- Parameters:
+    object: object to be picked up,
+    place: destination location where the object is placed
+
+2. transfer
+- Description: Move a non-liquid object or container from a source location to a target location.
+- Parameters:
+    object: object or container to be moved,
+    source: original location of the object,
+    target: destination location of the object
+
+3. repeat
+- Description: Repeat a previously executed sequence of actions.
+- Parameters:
+    back: most recent action to which execution should return before replaying the action sequence,
+    count: number of additional repetitions
+    (Note: Set 'count' to one less than the total number of repetitions specified in the original protocol. For example, if the protocol requires the sequence to be performed three times in total, set count to 2 because the sequence has already been executed once when the repeat action is reached.)
+
+4. shake
+- Description: Shake or gently swirl a specified object or container.
+- Parameters:
+    object: object or container to be shaken or swirled
+
+
+Liquid-Handling Operations
+
+1. aspirate
+- Description: Aspirate a specified liquid using a pipette.
+- Parameters:
+    object: liquid or solution to be aspirated,
+    amount: volume of liquid to be aspirated (mL)
+
+2. dispense
+- Description: Dispense aspirated liquid into a specified receiving container using a pipette.
+- Parameters:
+    place: container receiving the liquid,
+    amount: volume of liquid to be dispensed (mL)
+
+3. transfer_liquid
+- Description: Transfer liquid from a source container to a target container using a pipette as a single liquid-transfer operation.
+- Parameters:
+    source: container from which the liquid is aspirated,
+    target: container into which the liquid is dispensed
+
+4. discard_supernatant
+- Description: Aspirate the supernatant from a specified container and dispense it into a waste container using a pipette.
+- Parameters:
+    object: container from which the supernatant is removed
+
+5. discard_medium
+- Description: Aspirate culture medium from a specified culture container and dispense it into a waste container using a pipette.
+- Parameters:
+    object: culture container from which the culture medium is removed
+
+
+Device Operations
+
+(For frequently used laboratory devices with standardized operating procedures, such as centrifuges and incubators, dedicated device action primitives are defined. General device action primitives are used for less frequently used or general-purpose devices.)
+
+1. put_into_centrifuge
+- Description: Place a centrifuge tube into a rotor slot of the centrifuge.
+- Parameters:
+    object: centrifuge tube to be placed into the centrifuge
+
+2. take_out_centrifuge
+- Description: Remove a centrifuge tube from the centrifuge and secure it in the designated workspace.
+- Parameters:
+    object: centrifuge tube to be removed from the centrifuge
+
+3. set_centrifuge
+- Description: Set the operating parameters of the centrifuge.
+- Parameters:
+    force: relative centrifugal force (g),
+    speed: rotational speed (r/min),
+    time: centrifugation duration (min)
+    (Note: Specify either 'force' or 'speed', but not both.)
+
+4. put_into_incubator
+- Description: Place a specified culture container into the incubator.
+- Parameters:
+    object: culture container to be placed into the incubator
+
+5. take_out_incubator
+- Description: Remove a specified culture container from the incubator and place it steadily in the designated workspace.
+- Parameters:
+    object: culture container to be removed from the incubator
+
+6. set_incubator
+- Description: Set the incubator parameters and begin incubation.
+- Parameters:
+    CO2: carbon dioxide concentration,
+    temp: incubation temperature
+
+7. start_device
+- Description: Start a specified device.
+- Parameters:
+    device: device to be started
+
+8. set_device
+- Description: Set the operating parameters of a specified device.
+- Parameters:
+    device: device to be configured,
+    params: device-specific parameters. Determine the parameter names according to the device and protocol. Do not use params as a literal key; instead, use each required parameter name directly as a key.
+
+9. put_into_device
+- Description: Place a specified object into a specified device.
+- Parameters:
+    device: destination device,
+    object: object to be placed into the device
+
+10. take_out_device
+- Description: Remove a specified object from a specified device and place it steadily in the designated workspace.
+- Parameters:
+    device: device from which the object is removed,
+    object: object to be removed
+
+
+Coarse-Grained Biological Operations
+
+1. resuspension
+- Description: Insert the pipette tip below the liquid surface and slowly pipette up and down 3-5 times to resuspend the cells.
+- Parameters:
+    object: container in which the cells are to be resuspended
+
+2. microscopic_observe
+- Description: Observe a specified culture container containing cells or tissue under a microscope.
+- Parameters:
+    object: culture container containing cells or tissue to be observed
+
+3. cell_dilution
+- Description: Dilute a cell suspension to a specified target cell density.
+- Parameters:
+    target: container holding the cell suspension to be diluted,
+    diluent: solution used to dilute the cell suspension,
+    density: target cell density (cells/mL)
+
+4. cell_storage
+- Description: Aliquot a cell suspension into storage containers for preservation.
+- Parameters:
+    source: container holding the cell suspension,
+    container: destination storage container,
+    volume: volume of cell suspension dispensed into each storage container
+
+5. cell_seed
+- Description: Seed a cell suspension into a culture container or culture plate for subsequent culture.
+- Parameters:
+    source: container holding the cell suspension,
+    plate: destination culture container or culture plate,
+    volume: volume of cell suspension seeded into each culture container or, for a multiwell plate, into each well
+
+6. gradient_dilution
+- Description: Prepare a series of test-substance concentrations by serial dilution.
+- Parameters:
+    solute: test substance to be diluted (optional; use 'test substance' when it is not specified),
+    diluent: solution used for serial dilution
+
+7. add_reagent_to_plate
+- Description: Dispense a specified reagent into each well of a multiwell plate using a pipette.
+- Parameters:
+    reagent: reagent or solution to be added,
+    plate: destination multiwell plate,
+    volume: volume of reagent dispensed into each well
+
+8. measure_cell_viability
+- Description: Measure absorbance at a specified wavelength using a microplate reader and calculate cell viability.
+- Parameters:
+    object: sample or multiwell plate to be measured,
+    wavelength: measurement wavelength
+
+9. count_cells_trypan_blue
+- Description: Perform viable-cell counting using the trypan blue exclusion method.
+- Parameters:
+    source: container holding the cell suspension to be counted
+
+10. filter_cell_suspension
+- Description: Filter a cell suspension through a specified mesh or cell strainer, collect the filtrate in a target container.
+- Parameters:
+    source: container holding the cell suspension,
+    filter_tool: type of mesh or cell strainer used for filtration,
+    target: container receiving the filtered cell suspension
+
+11. cut_in_piece
+- Description: Cut the specified tissue into small fragments.
+- Parameters:
+    target: tissue to be cut,
+    volume: volume of each resulting tissue fragment

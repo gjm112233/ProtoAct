@@ -1,0 +1,90 @@
+{
+  "stages": [
+    {
+      "monitor": [
+          {"type": "resource_ready", "prepare": "MDA-MB-231 cells cultured in DMEM supplemented with 10% FBS"}
+      ],
+      "subtasks": [
+          {"action": "transfer", "object": "culture dish", "source": "incubator", "target": "workspace"},
+          {"action": "discard_medium", "object": "culture dish"}
+      ]
+    },
+
+    {
+      "monitor": [
+          {"type": "visual_state", "observe": "the culture medium removed"},
+          {"type": "resource_ready", "prepare": "PBS"}
+      ],
+      "subtasks": [
+          {"action": "aspirate", "object": "PBS", "amount": "2mL"},
+          {"action": "dispense", "place": "culture dish", "amount": "2mL"},
+          {"action": "shake", "object": "culture dish"},
+          {"action": "discard_medium", "object": "culture dish"}
+      ]
+    },
+
+    {
+      "monitor": [
+          {"type": "visual_state", "observe": "PBS solution removed"},
+          {"type": "resource_ready", "prepare": "trypsin"}
+      ],
+      "subtasks": [
+          {"action": "aspirate", "object": "trypsin", "amount": "2mL"},
+          {"action": "dispense", "place": "culture dish", "amount": "2mL"},
+          {"action": "shake", "object": "culture dish"}
+      ]
+    },
+
+    {
+      "monitor": [
+          {"type": "wait_time", "time": "5min"}
+      ],
+      "subtasks": [
+          {"action": "transfer", "object": "culture dish", "source": "workspace", "target": "microscopic observation area"},
+          {"action": "microscopic_observe", "object": "culture dish"}
+      ]
+    },
+
+    {
+      "monitor": [
+          {"type": "visual_state", "observe": "cells become round and detached"},
+          {"type": "resource_ready", "prepare": "centrifuge_tube, DMEM medium supplemented with 10% FBS"}
+      ],
+      "subtasks": [
+          {"action": "transfer", "object": "culture dish", "source": "microscopic observation area", "target": "workspace"},
+          {"action": "aspirate", "object": "DMEM medium supplemented with 10% FBS", "amount": "2mL"},
+          {"action": "dispense", "place": "culture dish", "amount": "2mL"},
+          {"action": "transfer_liquid", "source": "culture dish", "target": "centrifuge tube"},
+          {"action": "put_into_centrifuge", "object": "centrifuge tube"},
+          {"action": "set_centrifuge", "force": "800g", "time": "6min"},
+          {"action": "start_device", "device": "centrifuge"}
+      ]
+    },
+
+    {
+      "monitor": [
+          {"type": "wait_time", "time": "6min", "device": "centrifuge"}
+      ],
+      "subtasks": [
+          {"action": "take_out_centrifuge", "object": "centrifuge tube"},
+          {"action": "discard_supernatant", "object": "centrifuge tube"}
+      ]
+    },
+
+    {
+      "monitor": [
+          {"type": "visual_state", "observe": "supernatant removed"},
+          {"type": "resource_ready", "prepare": "the culture dish, DMEM medium supplemented with 10% FBS"}
+      ],
+      "subtasks": [
+          {"action": "resuspension", "object": "centrifuge tube"},
+          {"action": "transfer_liquid", "source": "centrifuge tube", "target": "culture dish"},
+          {"action": "aspirate", "object": "DMEM medium supplemented with 10% FBS", "amount": "6mL"},
+          {"action": "dispense", "place": "culture dish", "amount": "6mL"},
+          {"action": "put_into_incubator", "object": "culture dish"},
+          {"action": "set_incubator", "CO2": "5%", "temp": "37℃"},
+          {"action": "start_device", "device": "incubator"}
+      ]
+    }
+  ]
+}

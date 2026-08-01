@@ -1,0 +1,9 @@
+Initial state: The mouse lung tissue has been washed and minced and is placed in a small beaker containing 4 mL of DNase.
+
+(1) Add 5 mL of fetal bovine serum and 20 mL of Alveolar Lavage Solution II, then transfer the mixture into a flask. Incubate the flask in a shaking water bath at 37°C for 5 min.
+
+(2) Filter the mixture through a 200-mesh screen. Centrifuge at 400 × g for 5 min, discard the supernatant, and resuspend the cells. Transfer the cell suspension into a culture flask containing DMEM and culture for 3 h.
+
+(3) Collect the cell suspension and centrifuge at 400 × g for 10 min. Discard the supernatant, wash the cells once with serum-free DMEM, and resuspend the cells in DMEM containing 20% fetal bovine serum. Perform cell counting.
+
+(4) Seed the cells into culture flasks at an appropriate density. Replace the culture medium after 24 h and continue culturing the cells.

@@ -1,0 +1,87 @@
+{
+  "stages": [
+    {
+      "monitor": [
+        {"type": "resource_ready", "prepare": "mouse brain tissue (2g), Hanks solution, culture dish"}
+      ],
+      "subtasks": [
+        {"action": "transfer", "object": "brain tissue", "source": "original culture dish", "target": "new culture dish"},
+        {"action": "aspirate", "object": "Hanks solution", "amount": "2mL"},
+        {"action": "dispense", "place": "culture dish", "amount": "2mL"},
+        {"action": "shake", "object": "culture dish"},
+        {"action": "discard_medium", "object": "culture dish"},
+        {"action": "repeat", "back": "aspirate", "count": "2"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "washed three times with Hanks solution"},
+        {"type": "resource_ready", "prepare": "test tube, Hanks solution"}
+      ],
+      "subtasks": [
+        {"action": "transfer", "object": "brain tissue", "source": "culture dish", "target": "test tube"},
+        {"action": "aspirate", "object": "Hanks solution", "amount": "80mL"},
+        {"action": "dispense", "place": "test tube", "amount": "80mL"},
+        {"action": "resuspension", "object": "test tube"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "wait_time", "time": "10min"}
+      ],
+      "subtasks": [
+        {"action": "discard_supernatant", "object": "test tube"},
+        {"action": "repeat", "back": "aspirate", "count": "2"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "sedimentation washing completed three times"},
+        {"type": "resource_ready", "prepare": "DMEM/F12 medium, 73μm nylon screen, centrifuge tube"}
+      ],
+      "subtasks": [
+        {"action": "aspirate", "object": "DMEM/F12 medium", "amount": "2mL"},
+        {"action": "dispense", "place": "test tube", "amount": "2mL"},
+        {"action": "filter_cell_suspension", "source": "test tube", "filter_tool": "73μm nylon filter", "target": "centrifuge tube"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "cell suspension from test tube filtered"},
+        {"type": "resource_ready", "prepare": "DMEM/F12 medium"}
+      ],
+      "subtasks": [
+        {"action": "aspirate", "object": "DMEM/F12 medium", "amount": "2mL"},
+        {"action": "dispense", "place": "the inner surface of the 73μm nylon screen", "amount": "2mL"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "filtrate collected in centrifuge tube"},
+        {"type": "resource_ready", "prepare": "trypan blue solution, hemocytometer, empty tube"}
+      ],
+      "subtasks": [
+        {"action": "count_cells_trypan_blue", "source": "centrifuge tube"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "cell counting results have been obtained, the required volume of medium to be added (V mL) has been calculated based on target density"},
+        {"type": "resource_ready", "prepare": "DMEM/F12 medium, culture flask"}
+      ],
+      "subtasks": [
+        {"action": "cell_dilution", "target": "centrifuge tube", "diluent": "DMEM/F12 medium", "density": "1x10^4 cell/mL"},
+        {"action": "cell_seed", "source": "centrifuge tube", "plate": "culture flask", "volume": "2mL"},
+        {"action": "put_into_incubator", "object": "culture flask"},
+        {"action": "set_incubator", "CO2": "5%", "temp": "37℃"},
+        {"action": "start_device", "device": "incubator"}
+      ]
+    }
+  ]
+}

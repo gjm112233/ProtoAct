@@ -1,0 +1,87 @@
+Monitor Condition: Cartilage tissue cut into pieces of approximately 1 mm³, a glass culture dish, and GBSS are available.
+Subtask 1: Use ophthalmic forceps to transfer the cartilage tissue pieces into the glass culture dish.
+Subtask 2: Replace the pipette tip. Use a pipette to aspirate 10 mL of GBSS and add it to the glass culture dish.
+
+Monitor Condition: The tissue has been allowed to stand for 10 min. Hyaluronidase solution is available.
+Subtask 3: Replace the pipette tip. Use a pipette to aspirate all the GBSS from the glass culture dish and dispense it into the liquid waste container.
+Subtask 4: Replace the pipette tip. Use a pipette to aspirate 4 mL of hyaluronidase solution and add it to the glass culture dish.
+
+Monitor Condition: The tissue has been allowed to stand for 5 min. Hyaluronidase solution is available.
+Subtask 5: Replace the pipette tip. Use a pipette to aspirate all the hyaluronidase solution from the glass culture dish and dispense it into the liquid waste container.
+Subtask 6: Replace the pipette tip. Use a pipette to aspirate 8 mL of hyaluronidase solution and add it to the glass culture dish.
+
+Monitor Condition: The tissue has been allowed to stand for 10 min. GBSS is available.
+Subtask 7: Replace the pipette tip. Use a pipette to aspirate all the hyaluronidase solution from the glass culture dish and dispense it into the liquid waste container.
+Subtask 8: Replace the pipette tip. Use a pipette to aspirate 5 mL of GBSS and add it to the glass culture dish.
+Subtask 9: Gently shake the glass culture dish.
+Subtask 10: Use a pipette to aspirate all the GBSS from the glass culture dish and dispense it into the liquid waste container.
+Subtask 11: Repeat Subtasks 8–10 until a total of two washes has been completed.
+
+Monitor Condition: The tissue pieces have been washed twice with GBSS. A 25 mL screw-cap tube and trypsin are available.
+Subtask 12: Use ophthalmic forceps to transfer the cartilage tissue pieces from the glass culture dish into the 25 mL screw-cap tube.
+Subtask 13: Replace the pipette tip. Use a pipette to aspirate 2 mL of trypsin and add it to the 25 mL screw-cap tube.
+Subtask 14: Gently shake the 25 mL screw-cap tube.
+Subtask 15: Use a pipette to aspirate all the trypsin from the 25 mL screw-cap tube and dispense it into the liquid waste container.
+Subtask 16: Repeat Subtasks 13–15 until a total of two washes has been completed.
+
+Monitor Condition: The trypsin has been removed from the 25 mL screw-cap tube. Trypsin is available.
+Subtask 17: Replace the pipette tip. Use a pipette to aspirate 4 mL of trypsin and add it to the 25 mL screw-cap tube.
+Subtask 18: Place the 25 mL screw-cap tube securely inside the incubator and close the incubator door.
+Subtask 19: Set the incubator temperature to 37°C and the CO₂ concentration to 5% using the incubator control panel.
+Subtask 20: Start the incubator.
+
+Monitor Condition: The tissue has been cultured for 30 min. GBSS is available.
+Subtask 21: Remove the 25 mL screw-cap tube from the incubator and place it securely in the workspace.
+Subtask 22: Replace the pipette tip. Use a pipette to aspirate all the trypsin from the 25 mL screw-cap tube and dispense it into the liquid waste container.
+Subtask 23: Replace the pipette tip. Use a pipette to aspirate 5 mL of GBSS and add it to the 25 mL screw-cap tube.
+Subtask 24: Gently shake the 25 mL screw-cap tube.
+Subtask 25: Use a pipette to aspirate all the GBSS from the 25 mL screw-cap tube and dispense it into the liquid waste container.
+Subtask 26: Repeat Subtasks 23–25 until a total of two washes has been completed.
+
+Monitor Condition: Two GBSS washes have been completed. A 0.2% collagenase solution is available.
+Subtask 27: Replace the pipette tip. Use a pipette to aspirate 2 mL of 0.2% collagenase solution and add it to the 25 mL screw-cap tube.
+
+Monitor Condition: The tissue has been allowed to stand for 5 min. Collagenase solution is available.
+Subtask 28: Use a pipette to aspirate all the collagenase solution from the 25 mL screw-cap tube and dispense it into the liquid waste container.
+Subtask 29: Replace the pipette tip. Use a pipette to aspirate 4 mL of collagenase solution and add it to the 25 mL screw-cap tube.
+Subtask 30: Place the 25 mL screw-cap tube securely inside the incubator and close the incubator door.
+Subtask 31: Set the incubator temperature to 37°C and the CO₂ concentration to 5% using the incubator control panel.
+Subtask 32: Start the incubator.
+
+Monitor Condition: The tissue has been cultured for 90 min. A centrifuge tube is available.
+Subtask 33: Remove the 25 mL screw-cap tube from the incubator and place it securely in the workspace.
+Subtask 34: Replace the pipette tip. Use a pipette to aspirate all the supernatant from the 25 mL screw-cap tube and transfer it into the centrifuge tube.
+Subtask 35: Place the centrifuge tube into a rotor position in the centrifuge.
+Subtask 36: Set the centrifuge to 600 × g for 8 min using the centrifuge control panel.
+Subtask 37: Start the centrifuge.
+
+Monitor Condition: The centrifuge has completed the 8-min centrifugation process.
+Subtask 38: Remove the centrifuge tube from the centrifuge and place it securely in the workspace.
+Subtask 39: Use a pipette to aspirate the supernatant from the centrifuge tube and dispense it into the liquid waste container.
+
+Monitor Condition: Most of the supernatant has been removed from the centrifuge tube. F12 culture medium containing 20% FBS is available.
+Subtask 40: Replace the pipette tip. Use a pipette to aspirate 8 mL of F12 culture medium containing 20% FBS and add it to the centrifuge tube.
+Subtask 41: Insert the pipette tip below the liquid surface in the centrifuge tube, slowly press and release the plunger, and repeat the pipetting process 3–5 times to resuspend the cell suspension.
+Subtask 42: Place the centrifuge tube into a rotor position in the centrifuge.
+Subtask 43: Set the centrifuge to 180 × g for 1 min using the centrifuge control panel.
+Subtask 44: Start the centrifuge.
+
+Monitor Condition: The centrifuge has completed the 1-min centrifugation process. A new centrifuge tube is available.
+Subtask 45: Remove the centrifuge tube from the centrifuge and place it securely in the workspace.
+Subtask 46: Replace the pipette tip. Use a pipette to aspirate all the supernatant from the centrifuge tube and transfer it into the new centrifuge tube.
+Subtask 47: Place the new centrifuge tube into a rotor position in the centrifuge.
+Subtask 48: Set the centrifuge to 600 × g for 10 min using the centrifuge control panel.
+Subtask 49: Start the centrifuge.
+
+Monitor Condition: The centrifuge has completed the 10-min centrifugation process.
+Subtask 50: Remove the centrifuge tube from the centrifuge and place it securely in the workspace.
+Subtask 51: Use a pipette to aspirate the supernatant from the centrifuge tube and dispense it into the liquid waste container.
+
+Monitor Condition: Most of the supernatant has been removed from the centrifuge tube. F12 culture medium containing 12% FBS and a 75 cm² culture flask are available.
+Subtask 52: Replace the pipette tip. Use a pipette to aspirate 8 mL of F12 culture medium containing 12% FBS and add it to the centrifuge tube.
+Subtask 53: Insert the pipette tip below the liquid surface in the centrifuge tube, slowly press and release the plunger, and repeat the pipetting process 3–5 times to resuspend the cell suspension.
+Subtask 54: Transfer all the liquid from the centrifuge tube into the 75 cm² culture flask.
+Subtask 55: Replace the pipette tip. Use a pipette to aspirate 4 mL of F12 culture medium containing 12% FBS and add it to the 75 cm² culture flask.
+Subtask 56: Place the 75 cm² culture flask inside the incubator.
+Subtask 57: Set the incubator temperature to 37°C and the CO₂ concentration to 5% using the incubator control panel.
+Subtask 58: Start the incubator.

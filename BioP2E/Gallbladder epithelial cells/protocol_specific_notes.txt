@@ -1,0 +1,3 @@
+1. Before centrifugation, an operation for transferring the cell suspension into a centrifuge tube must be included.
+2. Although the original protocol directly specifies the target cell concentration for dilution, a cell-counting step must be included before cell dilution during protocol parsing.
+3. During the final culture stage, the culture medium must be replaced on Day 3. After medium replacement, the culture flask must be returned to the incubator, the incubation parameters must be set, and the incubator must be started. After an additional 2 days of culture, an operation for removing the culture flask from the incubator must be included.

@@ -1,0 +1,64 @@
+{
+  "stages": [
+      {
+          "monitor": [
+              {"type": "device_state", "device": "cell-thawing device", "state": "preheated"}
+          ],
+          "subtasks": [
+              {"action": "transfer", "object": "cell cryopreservation tube", "source": "liquid nitrogen tank", "target": "cell-thawing device"},
+              {"action": "start_device", "device": "cell-thawing device"}
+          ]
+      },
+
+      {
+          "monitor": [
+              {"type": "device_state", "device": "cell-thawing device", "state": "finished"}
+          ],
+          "subtasks": [
+              {"action":"take_out_device","device":"cell-thawing device", "object": "cell cryopreservation tube"},
+              {"action": "transfer_liquid", "source": "cell cryopreservation tube", "target": "centrifuge tube"},
+              {"action": "put_into_centrifuge", "object": "centrifuge tube"},
+              {"action": "set_centrifuge", "force": "800g", "time": "6min"},
+              {"action": "start_device", "device": "centrifuge"}
+          ]
+      },
+
+      {
+          "monitor": [
+              {"type": "wait_time", "time": "6min", "device": "centrifuge"}
+          ],
+          "subtasks": [
+              {"action":" take_out_centrifuge", "object": "centrifuge tube" },
+              {"action": " discard_supernatant", "object": "centrifuge tube"}
+          ]
+      },
+
+      {
+          "monitor":[
+              {"type": "visual_state", "observe": "supernatant removed"},
+              {"type": "resource_ready", "prepare": "serum containing culture medium"}
+          ],
+          "subtasks": [
+              {"action":"aspirate", "object":"serum containing culture medium", "amount": "1mL"},
+              {"action": "dispense", "place": "centrifuge tube", "amount": "1mL"},
+              {"action": "resuspension", "object": "centrifuge tube"}
+          ]
+      },
+
+      {
+          "monitor": [
+              {"type": "visual_state", "observe": "the sediment at the bottom of the centrifuge tube disappears"},
+              {"type": "resource_ready", "prepare": "a culture dish, serum containing culture medium"}
+          ],
+          "subtasks": [
+              {"action": "aspirate", "object": "serum containing culture medium", "amount": "5mL"},
+              {"action": "dispense", "place": "culture dish", "amount": "5mL"},
+              {"action": "transfer_liquid", "source": "centrifuge tube", "target": "culture dish"},
+              {"action": "shake", "object": "culture dish"},
+              {"action": "put_into_incubator", "object": "culture dish"},
+              {"action": "set_incubator", "CO2": "5%", "temp": "37℃"},
+              {"action": "start_device", "device": "incubator"}
+          ]
+      }
+  ]
+}

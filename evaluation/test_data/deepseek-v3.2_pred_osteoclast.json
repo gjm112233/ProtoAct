@@ -1,0 +1,361 @@
+{
+  "stages": [
+    {
+      "monitor": [
+        {
+          "type": "resource_ready",
+          "prepare": "sectioned chicken bone, culture dish, PBS"
+        }
+      ],
+      "subtasks": [
+        {
+          "action": "pick_and_place",
+          "object": "sectioned chicken bone",
+          "place": "culture dish"
+        },
+        {
+          "action": "aspirate",
+          "object": "PBS",
+          "amount": "20mL"
+        },
+        {
+          "action": "dispense",
+          "place": "culture dish",
+          "amount": "20mL"
+        },
+        {
+          "action": "discard_medium",
+          "object": "culture dish"
+        },
+        {
+          "action": "repeat",
+          "back": "aspirate",
+          "count": "2"
+        }
+      ]
+    },
+    {
+      "monitor": [
+        {
+          "type": "visual_state",
+          "observe": "PBS in the culture dish removed"
+        },
+        {
+          "type": "resource_ready",
+          "prepare": "PBS"
+        }
+      ],
+      "subtasks": [
+        {
+          "action": "aspirate",
+          "object": "PBS",
+          "amount": "50mL"
+        },
+        {
+          "action": "dispense",
+          "place": "culture dish",
+          "amount": "50mL"
+        },
+        {
+          "action": "put_into_device",
+          "device": "oscillating water bath",
+          "object": "culture dish"
+        },
+        {
+          "action": "set_device",
+          "device": "oscillating water bath",
+          "temp": "37℃"
+        },
+        {
+          "action": "start_device",
+          "device": "oscillating water bath"
+        }
+      ]
+    },
+    {
+      "monitor": [
+        {
+          "type": "wait_time",
+          "device": "oscillating water bath",
+          "time": "30min"
+        }
+      ],
+      "subtasks": [
+        {
+          "action": "take_out_device",
+          "device": "oscillating water bath",
+          "object": "culture dish"
+        },
+        {
+          "action": "transfer_liquid",
+          "source": "culture dish",
+          "target": "centrifuge tube"
+        },
+        {
+          "action": "put_into_centrifuge",
+          "object": "centrifuge tube"
+        },
+        {
+          "action": "set_centrifuge",
+          "force": "650g",
+          "time": "10min"
+        },
+        {
+          "action": "start_device",
+          "device": "centrifuge"
+        }
+      ]
+    },
+    {
+      "monitor": [
+        {
+          "type": "wait_time",
+          "device": "centrifuge",
+          "time": "10min"
+        }
+      ],
+      "subtasks": [
+        {
+          "action": "take_out_centrifuge",
+          "object": "centrifuge tube"
+        },
+        {
+          "action": "discard_supernatant",
+          "object": "centrifuge tube"
+        },
+        {
+          "action": "aspirate",
+          "object": "PBS",
+          "amount": "5mL"
+        },
+        {
+          "action": "dispense",
+          "place": "centrifuge tube",
+          "amount": "5mL"
+        }
+      ]
+    },
+    {
+      "monitor": [
+        {
+          "type": "visual_state",
+          "observe": "supernatant removed"
+        }
+      ],
+      "subtasks": [
+        {
+          "action": "resuspension",
+          "object": "centrifuge tube"
+        }
+      ]
+    },
+    {
+      "monitor": [
+        {
+          "type": "visual_state",
+          "observe": "the cell pellet is resuspended"
+        }
+      ],
+      "subtasks": [
+        {
+          "action": "transfer_liquid",
+          "source": "centrifuge tube",
+          "target": "50mL centrifuge tube"
+        },
+        {
+          "action": "put_into_centrifuge",
+          "object": "50mL centrifuge tube"
+        },
+        {
+          "action": "set_centrifuge",
+          "force": "650g",
+          "time": "20min"
+        },
+        {
+          "action": "start_device",
+          "device": "centrifuge"
+        }
+      ]
+    },
+    {
+      "monitor": [
+        {
+          "type": "wait_time",
+          "device": "centrifuge",
+          "time": "20min"
+        }
+      ],
+      "subtasks": [
+        {
+          "action": "take_out_centrifuge",
+          "object": "50mL centrifuge tube"
+        },
+        {
+          "action": "discard_supernatant",
+          "object": "50mL centrifuge tube"
+        }
+      ]
+    },
+    {
+      "monitor": [
+        {
+          "type": "visual_state",
+          "observe": "supernatant removed"
+        },
+        {
+          "type": "resource_ready",
+          "prepare": "PBS"
+        }
+      ],
+      "subtasks": [
+        {
+          "action": "aspirate",
+          "object": "PBS",
+          "amount": "10mL"
+        },
+        {
+          "action": "dispense",
+          "place": "50mL centrifuge tube",
+          "amount": "10mL"
+        },
+        {
+          "action": "discard_medium",
+          "object": "50mL centrifuge tube"
+        },
+        {
+          "action": "repeat",
+          "back": "aspirate",
+          "count": "1"
+        }
+      ]
+    },
+    {
+      "monitor": [
+        {
+          "type": "visual_state",
+          "observe": "PBS in the centrifuge tube removed"
+        },
+        {
+          "type": "resource_ready",
+          "prepare": "PBS"
+        }
+      ],
+      "subtasks": [
+        {
+          "action": "aspirate",
+          "object": "PBS",
+          "amount": "20mL"
+        },
+        {
+          "action": "dispense",
+          "place": "50mL centrifuge tube",
+          "amount": "20mL"
+        }
+      ]
+    },
+    {
+      "monitor": [
+        {
+          "type": "resource_ready",
+          "prepare": "trypan blue solution, hemocytometer, empty tube"
+        }
+      ],
+      "subtasks": [
+        {
+          "action": "count_cells_trypan_blue",
+          "source": "50mL centrifuge tube"
+        }
+      ]
+    },
+    {
+      "monitor": [
+        {
+          "type": "visual_state",
+          "observe": "cell counting results have been obtained, the required volume of medium to be added (V mL) has been calculated based on the target density"
+        },
+        {
+          "type": "resource_ready",
+          "prepare": "MEM medium supplemented with 10% FBS, culture flask"
+        }
+      ],
+      "subtasks": [
+        {
+          "action": "cell_dilution",
+          "target": "50mL centrifuge tube",
+          "diluent": "MEM medium supplemented with 10% FBS",
+          "density": "1×10^6 cell/mL"
+        },
+        {
+          "action": "cell_seed",
+          "source": "50mL centrifuge tube",
+          "plate": "culture flask",
+          "volume": "2mL"
+        },
+        {
+          "action": "put_into_incubator",
+          "object": "culture flask"
+        },
+        {
+          "action": "set_incubator",
+          "CO2": "5%",
+          "temp": "37℃"
+        },
+        {
+          "action": "start_device",
+          "device": "incubator"
+        }
+      ]
+    },
+    {
+      "monitor": [
+        {
+          "type": "wait_time",
+          "device": "incubator",
+          "time": "24h"
+        }
+      ],
+      "subtasks": [
+        {
+          "action": "take_out_incubator",
+          "object": "culture flask"
+        },
+        {
+          "action": "discard_medium",
+          "object": "culture flask"
+        }
+      ]
+    },
+    {
+      "monitor": [
+        {
+          "type": "visual_state",
+          "observe": "medium in the culture flask removed"
+        },
+        {
+          "type": "resource_ready",
+          "prepare": "MEM medium supplemented with 10% FBS"
+        }
+      ],
+      "subtasks": [
+        {
+          "action": "aspirate",
+          "object": "MEM medium supplemented with 10% FBS",
+          "amount": "2mL"
+        },
+        {
+          "action": "dispense",
+          "place": "culture flask",
+          "amount": "2mL"
+        },
+        {
+          "action": "put_into_incubator",
+          "object": "culture flask"
+        },
+        {
+          "action": "start_device",
+          "device": "incubator"
+        }
+      ]
+    }
+  ]
+}

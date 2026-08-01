@@ -1,0 +1,28 @@
+Monitor Condition: Adipose tissue particles cut into approximately 1 mm³ pieces, a centrifuge tube, and PBS solution are available.
+Subtask 1: Transfer the prepared adipose tissue particles into the centrifuge tube.
+Subtask 2: Use a pipette to aspirate 2 mL of PBS solution and add it to the centrifuge tube.
+Subtask 3: Place the centrifuge tube into a rotor position in the centrifuge.
+Subtask 4: Set the centrifuge to 1,000 rpm for 10 min using the centrifuge control panel.
+Subtask 5: Start the centrifuge.
+
+Monitor Condition: The 10-min centrifugation process has been completed. A culture flask is available.
+Subtask 6: Remove the centrifuge tube from the centrifuge and place it securely in the workspace.
+Subtask 7: Replace the pipette tip. Use a pipette to aspirate the purified adipose tissue particles floating in the upper layer and gently spread them over the bottom surface of the culture flask.
+
+Monitor Condition: The culture flask has been allowed to stand for 5 min. DMEM culture medium is available.
+Subtask 8: Replace the pipette tip. Use a pipette to aspirate 2 mL of DMEM culture medium and add it to the culture flask.
+Subtask 9: Place the culture flask securely inside the incubator and close the incubator door.
+Subtask 10: Set the incubator temperature to 37°C and the CO₂ concentration to 5% using the incubator control panel.
+Subtask 11: Start the incubator.
+
+Monitor Condition: The cells have been cultured for 5 days.
+Subtask 12: Remove the culture flask from the incubator and place it securely in the microscopic observation area.
+Subtask 13: Observe the adipose cells in the culture flask using an inverted microscope.
+
+Monitor Condition: Numerous short spindle-shaped cells are observed at the bottom of the culture flask. DMEM culture medium is available.
+Subtask 14: Move the culture flask from the microscopic observation area to the workspace.
+Subtask 15: Use a pipette to aspirate the old culture medium from the culture flask and dispense it into the liquid waste container.
+Subtask 16: Replace the pipette tip. Use a pipette to aspirate 2 mL of fresh DMEM culture medium and add it to the culture flask.
+Subtask 17: Place the culture flask securely inside the incubator.
+Subtask 18: Set the incubator temperature to 37°C and the CO₂ concentration to 5% using the incubator control panel.
+Subtask 19: Start the incubator.

@@ -1,0 +1,67 @@
+﻿Hepatocyte Step 2:
+(2) When the cells have grown into a monolayer, add Digestion Solution II and incubate at 4°C for 12 h. Remove the digestion solution, add culture medium containing 100 mL/L BS, and gently pipette to form a cell suspension. Filter the suspension through a 200-mesh nylon screen, wash twice with culture medium containing 100 mL/L BS, and centrifuge at 50 × g for 4 min. Confirm that the viable-cell percentage determined by trypan blue staining is greater than 80%, seed the cells at a density of 5 × 10^5 cells/mL, and culture them at 37°C with 5% CO2. After the cells have attached, replace the medium with culture medium containing 50 mL/L BS.
+
+Parsing Result:
+
+Monitor Condition: The culture flask has been incubated for 24 h.
+Subtask 1: Remove the culture flask from the incubator and place it steadily in the microscope observation area.
+Subtask 2: Observe the cells in the culture flask using an inverted microscope.
+
+Monitor Condition: Inverted-microscope observation shows that the cells have attached and formed a confluent monolayer covering the bottom of the flask; Digestion Solution II has been prepared.
+Subtask 3: Move the culture flask to the workspace.
+Subtask 4: Replace the pipette tip, aspirate 2 mL of Digestion Solution II, and dispense it into the culture flask.
+Subtask 5: Place the culture flask steadily into the incubator and close the incubator door.
+Subtask 6: Set the incubator temperature to 4°C and the CO2 concentration to 5% using the control panel.
+Subtask 7: Start the incubator.
+
+Monitor Condition: The culture flask has been incubated for 12 h.
+Subtask 8: Remove the culture flask from the incubator and place it steadily in the workspace.
+Subtask 9: Replace the pipette tip, aspirate the digestion solution from the culture flask, and dispense it into the waste container.
+
+Monitor Condition: The digestion solution in the culture flask has been almost completely removed; culture medium containing 100 mL/L BS has been prepared.
+Subtask 10: Replace the pipette tip, aspirate 2 mL of culture medium containing 100 mL/L BS, and dispense it into the culture flask.
+Subtask 11: Insert the pipette tip 1-2 mm below the liquid surface, then slowly press and release the plunger repeatedly for 3-5 cycles to form a cell suspension.
+
+Monitor Condition: A 200-mesh nylon screen, a centrifuge tube, and the cell suspension to be filtered have been prepared.
+Subtask 12: Install the 200-mesh nylon screen on the centrifuge tube.
+Subtask 13: Replace the pipette tip and aspirate the cell suspension from the culture flask.
+Subtask 14: Move the pipette above the 200-mesh nylon screen and slowly dispense the cell suspension dropwise onto the screen for filtration.
+
+Monitor Condition: The cell suspension in the culture flask has been almost completely filtered; culture medium containing 100 mL/L BS has been prepared.
+Subtask 15: Replace the pipette tip and aspirate 2 mL culture medium containing 100 mL/L BS.
+Subtask 16: Move the pipette above the 200-mesh nylon screen and slowly press the plunger so that the culture medium rinses the inner surface of the screen.
+Subtask 17: Repeat Subtasks 15-16 twice in total.
+
+Monitor Condition: The filtered cell suspension has been collected in the centrifuge tube.
+Subtask 18: Place the centrifuge tube into a rotor slot of the centrifuge.
+Subtask 19: Set the centrifuge to 50 × g for 4 min using the control panel.
+Subtask 20: Start the centrifuge.
+
+Monitor Condition: Wait until the centrifuge has completed its 6 min run.
+Subtask 21: Remove the centrifuge tube from the centrifuge and secure it in the workspace.
+Subtask 22: Replace the pipette tip, insert it 1-2 mm below the liquid surface, and slowly press and release the plunger repeatedly for 3-5 cycles to form a cell suspension.
+
+Monitor Condition: Trypan blue solution, a hemocytometer, and an empty tube have been prepared.
+Subtask 23: Replace the pipette tip, aspirate 10 μL of the cell suspension, and dispense it into the empty tube.
+Subtask 24: Replace the pipette tip, aspirate 10 μL of trypan blue solution, and dispense it into the same tube.
+Subtask 25: Replace the pipette tip, aspirate 10 μL of the mixture from the tube, and load it into the counting chamber of the hemocytometer.
+Subtask 26: Place the hemocytometer under a microscope, count the viable and dead cells, and calculate the viable-cell percentage.
+
+Monitor Condition: The counting result shows that the viable-cell percentage is greater than or equal to 80%. Based on the counting result, the required volume V mL of additional culture medium has been calculated; culture medium containing 100 mL/L BS and a culture dish have been prepared.
+Subtask 27: Replace the pipette tip, aspirate V mL of culture medium containing 100 mL/L BS, and dispense it into the centrifuge tube.
+Subtask 28: Replace the pipette tip, aspirate 2 mL cell suspension from the centrifuge tube, and seed it into the culture dish.
+Subtask 29: Place the culture dish steadily into the incubator and close the incubator door.
+Subtask 30: Set the incubator temperature to 37°C and the CO2 concentration to 5% using the control panel.
+Subtask 31: Start the incubator.
+
+Monitor Condition: The culture dish has been incubated for 24 h.
+Subtask 32: Remove the culture dish from the incubator and place it steadily in the microscope observation area.
+Subtask 33: Observe the cells in the culture dish using an inverted microscope.
+
+Monitor Condition: Microscopic observation shows that the cells in the culture dish have attached and formed a confluent layer covering the bottom.
+Subtask 34: Move the culture dish steadily to the workspace.
+Subtask 35: Use a pipette to slowly aspirate the culture medium and dispense it into the waste container.
+
+Monitor Condition: The solution in the culture dish has been almost completely removed; culture medium containing 50 mL/L BS has been prepared.
+Subtask 36: Replace the pipette tip, aspirate 2 mL of culture medium containing 50 mL/L BS, and dispense it into the culture dish.
+

@@ -1,0 +1,118 @@
+Monitor Condition: Prepared liver tissue fragments and D-Hanks solution are available.
+Subtask 1: Use a pipette to aspirate an appropriate amount of D-Hanks solution and add it to the culture dish containing the liver tissue fragments.
+Subtask 2: Use a pipette to aspirate the solution containing residual blood from the culture dish and dispense it into the waste container.
+
+Monitor Condition: The supernatant in the culture dish is nearly clear. D-Hanks solution and a centrifuge tube are available.
+Subtask 3: Use ophthalmic forceps to transfer the cleaned liver tissue fragments from the culture dish to the centrifuge tube.
+Subtask 4: Replace the pipette tip. Aspirate 2 mL of D-Hanks solution and add it to the centrifuge tube to cover the liver tissue fragments.
+Subtask 5: Place the centrifuge tube into a rotor position in the centrifuge.
+Subtask 6: Set the centrifuge to 800 rpm for 4 min using the centrifuge control panel.
+Subtask 7: Start the centrifuge.
+
+Monitor Condition: The centrifuge has completed the 4-min centrifugation process.
+Subtask 8: Remove the centrifuge tube from the centrifuge and secure it in the work area.
+Subtask 9: Replace the pipette tip. Use a pipette to aspirate the supernatant from the centrifuge tube and dispense it into the waste container.
+
+Monitor Condition: Most of the supernatant has been removed from the centrifuge tube. Digestion Solution I and a culture dish are available.
+Subtask 10: Replace the pipette tip. Use a pipette to aspirate 2 mL of Digestion Solution I and add it to the centrifuge tube to cover the tissue fragments.
+Subtask 11: Transfer the liver tissue fragments together with the digestion solution from the centrifuge tube to the culture dish.
+Subtask 12: Place the culture dish securely inside the incubator.
+Subtask 13: Set the incubator temperature to 37°C and the CO₂ concentration to 5% using the incubator control panel.
+Subtask 14: Start the incubator.
+
+Monitor Condition: The culture dish has been incubated in the incubator for 12 min. DMEM culture medium is available.
+Subtask 15: Remove the culture dish from the incubator and place it securely in the work area.
+Subtask 16: Replace the pipette tip. Use a pipette to aspirate 2 mL of DMEM culture medium and add it to the culture dish.
+Subtask 17: Gently swirl the culture dish.
+Subtask 18: Use a pipette to aspirate the washing solution from the culture dish and dispense it into the waste container.
+Subtask 19: Repeat Subtasks 16–18 three times in total.
+
+Monitor Condition: The liver tissue fragments have been washed three times. A 25 cm² culture flask and culture medium containing 100 mL/L BS are available.
+Subtask 20: Use ophthalmic forceps to attach the liver tissue fragments from the culture dish to the surface of the 25 cm² culture flask.
+Subtask 21: Replace the pipette tip. Use a pipette to aspirate 2 mL of culture medium containing 100 mL/L BS and add it to the culture flask to cover the liver tissue fragments.
+Subtask 22: Place the culture flask securely inside the incubator.
+Subtask 23: Set the incubator temperature to 37°C and the CO₂ concentration to 5% using the incubator control panel.
+Subtask 24: Start the incubator.
+
+Monitor Condition: The culture flask has been incubated in the incubator for 3 h. Culture medium containing 100 mL/L BS is available.
+Subtask 25: Remove the culture flask from the incubator and place it securely in the work area.
+Subtask 26: Replace the pipette tip. Use a pipette to aspirate 6 mL of culture medium containing 100 mL/L BS and add it to the culture flask.
+Subtask 27: Place the culture flask securely inside the incubator.
+Subtask 28: Set the incubator temperature to 37°C and the CO₂ concentration to 5% using the incubator control panel.
+Subtask 29: Start the incubator.
+
+Monitor Condition: The culture flask has been incubated in the incubator for 24 h.
+Subtask 30: Remove the culture flask from the incubator and place it securely in the microscopic observation area.
+Subtask 31: Observe the liver tissue fragments in the culture flask using an inverted microscope.
+
+Monitor Condition: Inverted microscopy shows a transparent cell layer extending outward around the tissue fragments in the culture flask, forming a growth halo.
+Subtask 32: Move the culture flask securely to the work area.
+Subtask 33: Replace the pipette tip. Use a pipette to aspirate the culture medium from the culture flask and dispense it into the waste container.
+
+Monitor Condition: Most of the culture medium has been removed from the culture flask. Culture medium containing 50 mL/L BS is available.
+Subtask 34: Replace the pipette tip. Use a pipette to aspirate 6 mL of culture medium containing 50 mL/L BS and add it to the culture flask to completely cover the liver tissue fragments.
+Subtask 35: Place the culture flask securely inside the incubator.
+Subtask 36: Set the incubator temperature to 37°C and the CO₂ concentration to 5% using the incubator control panel.
+Subtask 37: Start the incubator.
+
+Monitor Condition: The culture flask has been incubated in the incubator for 24 h.
+Subtask 38: Remove the culture flask from the incubator and place it securely in the microscopic observation area.
+Subtask 39: Observe the cell tissue in the culture flask using an inverted microscope.
+
+Monitor Condition: Inverted microscopy shows that the cells in the culture flask have attached and covered the bottom of the flask. Digestion Solution II is available.
+Subtask 40: Move the culture flask to the work area.
+Subtask 41: Replace the pipette tip. Use a pipette to aspirate 2 mL of Digestion Solution II and add it to the culture flask.
+Subtask 42: Place the culture flask securely inside the incubator and close the incubator door.
+Subtask 43: Set the incubator temperature to 4°C and the CO₂ concentration to 5% using the incubator control panel.
+Subtask 44: Start the incubator.
+
+Monitor Condition: The culture flask has been incubated in the incubator for 12 h.
+Subtask 45: Remove the culture flask from the incubator and place it securely in the work area.
+Subtask 46: Replace the pipette tip. Use a pipette to slowly aspirate the digestion solution from the culture flask and dispense it into the waste container.
+
+Monitor Condition: Most of the digestion solution has been removed from the culture flask. Culture medium containing 100 mL/L BS is available.
+Subtask 47: Replace the pipette tip. Use a pipette to aspirate 2 mL of culture medium containing 100 mL/L BS and add it to the culture flask.
+Subtask 48: Insert the pipette tip 1–2 mm below the liquid surface, slowly press and release the plunger, and repeat the pipetting process 3–5 times to form a cell suspension.
+
+Monitor Condition: A 200-mesh nylon screen, a centrifuge tube, and the cell suspension to be filtered are available.
+Subtask 49: Install the 200-mesh nylon screen on the centrifuge tube.
+Subtask 50: Replace the pipette tip. Use a pipette to aspirate the cell suspension from the culture flask.
+Subtask 51: Move the pipette above the 200-mesh nylon screen and slowly press the plunger to dispense the cell suspension dropwise onto the nylon screen for filtration.
+
+Monitor Condition: Most of the cell suspension in the culture flask has been filtered. Culture medium containing 100 mL/L BS is available.
+Subtask 52: Replace the pipette tip. Use a pipette to aspirate culture medium containing 100 mL/L BS.
+Subtask 53: Move the pipette above the 200-mesh nylon screen and slowly press the plunger so that the culture medium rinses the inner surface of the screen.
+Subtask 54: Repeat Subtasks 52–53 two times in total.
+
+Monitor Condition: The filtered cell suspension has been collected in the centrifuge tube.
+Subtask 55: Place the centrifuge tube into a rotor position in the centrifuge.
+Subtask 56: Set the centrifuge to 50 × g for 4 min using the centrifuge control panel.
+Subtask 57: Start the centrifuge.
+
+Monitor Condition: The centrifuge has completed the 4-min centrifugation process.
+Subtask 58: Remove the centrifuge tube from the centrifuge and secure it in the work area.
+Subtask 59: Replace the pipette tip. Insert the pipette tip 1–2 mm below the liquid surface, slowly press and release the plunger, and repeat the pipetting process 3–5 times to form a cell suspension.
+
+Monitor Condition: Trypan blue staining solution, a hemocytometer, and an empty test tube are available.
+Subtask 60: Replace the pipette tip. Use a pipette to aspirate 10 μL of the cell suspension and add it to the empty test tube.
+Subtask 61: Replace the pipette tip. Use a pipette to aspirate 10 μL of trypan blue staining solution and add it to the same test tube.
+Subtask 62: Replace the pipette tip. Use a pipette to aspirate 10 μL of the mixture from the test tube and add it to the counting chamber of the hemocytometer.
+Subtask 63: Place the hemocytometer under a microscope, observe and count the numbers of viable and dead cells, and calculate the proportion of viable cells.
+
+Monitor Condition: The counting results show that the proportion of viable cells is ≥80%. Based on the counting results, the required volume of additional culture medium has been calculated as V mL. Culture medium containing 100 mL/L BS and a culture dish are available.
+Subtask 64: Replace the pipette tip. Use a pipette to aspirate V mL of culture medium containing 100 mL/L BS and add it to the centrifuge tube to dilute the cell suspension to 5 × 10⁵ cells/mL.
+Subtask 65: Replace the pipette tip. Use a pipette to aspirate an appropriate volume of the cell suspension from the centrifuge tube and seed it into the culture dish.
+Subtask 66: Place the culture dish securely inside the incubator and close the incubator door.
+Subtask 67: Set the incubator temperature to 37°C and the CO₂ concentration to 5% using the incubator control panel.
+Subtask 68: Start the incubator.
+
+Monitor Condition: The culture dish has been incubated in the incubator for 24 h.
+Subtask 69: Remove the culture dish from the incubator and place it securely in the microscopic observation area.
+Subtask 70: Observe the cells in the culture dish using an inverted microscope.
+
+Monitor Condition: Microscopic observation shows that the cells in the culture dish have attached and covered the bottom of the flask.
+Subtask 71: Move the culture dish securely to the work area.
+Subtask 72: Use a pipette to slowly aspirate the culture medium from the culture flask and dispense it into the waste container.
+
+Monitor Condition: Most of the liquid has been removed from the culture flask. Culture medium containing 50 mL/L BS is available.
+Subtask 73: Replace the pipette tip. Use a pipette to aspirate 2 mL of culture medium containing 50 mL/L BS and add it to the culture dish.

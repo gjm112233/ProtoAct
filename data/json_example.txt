@@ -1,0 +1,386 @@
+example1:
+【Input】
+Monitor Condition: Cut liver tissue fragments and D-Hanks solution have been prepared.
+Subtask 1: Use a pipette to aspirate 2 mL D-Hanks solution and dispense it into the culture dish containing the liver tissue fragments.
+Subtask 2: Use a pipette to aspirate the blood-contaminated solution from the culture dish and dispense it into the waste container.
+
+Monitor Condition: The supernatant in the culture dish is nearly clear; D-Hanks solution and a centrifuge tube have been prepared.
+Subtask 3: Use ophthalmic forceps to transfer the washed liver tissue fragments from the culture dish to the centrifuge tube.
+Subtask 4: Replace the pipette tip, aspirate 2 mL D-Hanks solution, and dispense it into the centrifuge tube.
+Subtask 5: Place the centrifuge tube into a rotor slot of the centrifuge.
+Subtask 6: Set the centrifuge to 800 r/min for 4 min using the control panel.
+Subtask 7: Start the centrifuge.
+
+Monitor Condition: Wait until the centrifuge has completed its 4 min run.
+Subtask 8: Remove the centrifuge tube from the centrifuge and secure it in the workspace.
+Subtask 9: Replace the pipette tip, aspirate the supernatant from the centrifuge tube, and dispense it into the waste container.
+
+Monitor Condition: The supernatant in the centrifuge tube has been almost completely removed; Digestion Solution I and a culture dish have been prepared.
+Subtask 10: Replace the pipette tip, aspirate 2 mL Digestion Solution I, and dispense it into the centrifuge tube.
+Subtask 11: Transfer the liver tissue fragments together with the digestion solution from the centrifuge tube to the culture dish.
+Subtask 12: Place the culture dish steadily into the incubator.
+Subtask 13: Set the incubator temperature to 37°C and the CO2 concentration to 5% using the control panel.
+Subtask 14: Start the incubator.
+
+Monitor Condition: The culture dish has been incubated for 12 min; DMEM culture medium has been prepared.
+Subtask 15: Remove the culture dish from the incubator and place it steadily in the workspace.
+Subtask 16: Replace the pipette tip, aspirate 2 mL of DMEM culture medium, and dispense it into the culture dish.
+Subtask 17: Gently swirl the culture dish.
+Subtask 18: Use a pipette to aspirate the wash solution from the culture dish and dispense it into the waste container.
+Subtask 19: Repeat Subtasks 16-18 three times in total.
+
+Monitor Condition: The liver tissue fragments have been washed three times; a 25 cm² culture flask and culture medium containing 100 mL/L BS have been prepared.
+Subtask 20: Use ophthalmic forceps to attach the liver tissue fragments from the culture dish to the surface of the 25 cm² culture flask.
+Subtask 21: Replace the pipette tip, aspirate culture medium containing 100 mL/L BS, and dispense it into the culture flask until the liver tissue fragments are covered.
+Subtask 22: Place the culture flask steadily into the incubator.
+Subtask 23: Set the incubator temperature to 37°C and the CO2 concentration to 5% using the control panel.
+Subtask 24: Start the incubator.
+
+Monitor Condition: The culture flask has been incubated for 3 h; culture medium containing 100 mL/L BS has been prepared.
+Subtask 25: Remove the culture flask from the incubator and place it steadily in the workspace.
+Subtask 26: Replace the pipette tip, aspirate 6 mL of culture medium containing 100 mL/L BS, and dispense it into the culture flask.
+Subtask 27: Place the culture flask steadily into the incubator.
+Subtask 28: Set the incubator temperature to 37°C and the CO2 concentration to 5% using the control panel.
+Subtask 29: Start the incubator.
+
+Monitor Condition: The culture flask has been incubated for 24 h.
+Subtask 30: Remove the culture flask from the incubator and place it steadily in the microscope observation area.
+Subtask 31: Observe the liver tissue fragments in the culture flask using an inverted microscope.
+
+Monitor Condition: Inverted-microscope observation shows a transparent layer of cells extending outward around the tissue fragments, forming a cell outgrowth halo.
+Subtask 32: Move the culture flask steadily to the workspace.
+Subtask 33: Replace the pipette tip, aspirate the culture medium from the culture flask, and dispense it into the waste container.
+
+Monitor Condition: The culture medium in the culture flask has been almost completely removed; culture medium containing 50 mL/L BS has been prepared.
+Subtask 34: Replace the pipette tip, aspirate 6 mL of culture medium containing 50 mL/L BS, and dispense it into the culture flask.
+Subtask 35: Place the culture flask steadily into the incubator.
+Subtask 36: Set the incubator temperature to 37°C and the CO2 concentration to 5% using the control panel.
+Subtask 37: Start the incubator.
+
+【Output】
+{
+  "stages": [
+    {
+      "monitor": [
+        {"type": "resource_ready", "prepare": "sectioned liver tissue fragments, D-Hanks solution"}
+      ],
+      "subtasks": [
+        {"action": "aspirate", "object": "D-Hanks", "amount": "2mL"},
+        {"action": "dispense", "place": "culture dish containing liver tissue fragments", "amount": "2mL"},
+        {"action": "discard_medium", "object": "culture dish"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "the liver tissue fragments are thoroughly washed"},
+        {"type": "resource_ready", "prepare": "centrifuge tube, D-Hanks solution"}
+      ],
+      "subtasks": [
+        {"action": "transfer", "object": "liver tissue fragments", "source": "culture dish", "target": "centrifuge tube"},
+        {"action": "aspirate", "object": "D-Hanks", "amount": "2mL"},
+        {"action": "dispense", "place": "centrifuge tube", "amount": "2mL"},
+        {"action": "put_into_centrifuge", "object": "centrifuge tube"},
+        {"action": "set_centrifuge", "speed": "800r/min", "time": "4min"},
+        {"action": "start_device", "device": "centrifuge"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "wait_time", "time": "4min", "device": "centrifuge"}
+      ],
+      "subtasks": [
+        {"action": "take_out_centrifuge", "object": "centrifuge tube"},
+        {"action": "discard_supernatant", "object": "centrifuge tube"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "supernatant removed"},
+        {"type": "resource_ready", "prepare": "digestion solution I, culture dish"}
+      ],
+      "subtasks": [
+        {"action": "aspirate", "object": "digestion solution I", "amount": "2mL"},
+        {"action": "dispense", "place": "centrifuge tube", "amount": "2mL"},
+        {"action": "transfer", "object": "liver tissue fragments","source": "centrifuge tube", "target": "culture dish"},
+        {"action": "transfer_liquid", "source": "centrifuge tube", "target": "culture dish"},
+        {"action": "put_into_incubator", "object": "culture dish"},
+        {"action": "set_incubator", "CO2": "5%", "temp": "37℃"},
+        {"action": "start_device", "device": "incubator"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "wait_time", "device": "incubator", "time": "12min"},
+        {"type": "resource_ready", "prepare": "DMEM medium"}
+
+      ],
+      "subtasks": [
+        {"action": "take_out_incubator", "object": "culture dish"},
+        {"action": "aspirate", "object": "DMEM medium", "amount": "2mL"},
+        {"action": "dispense", "place": "culture dish", "amount": "2mL"},
+        {"action": "shake", "object": "culture dish"},
+        {"action": "discard_medium", "object": "culture dish"},
+        {"action": "repeat", "back": "aspirate", "count": 2}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "resource_ready", "prepare": "25 cm² culture flask, medium supplemented with 100 mL/L BS"}
+      ],
+      "subtasks": [
+        {"action": "transfer", "object": "liver tissue fragments","source": "culture dish", "target": "25 cm² culture flask"},
+        {"action": "aspirate", "object": "medium supplemented with 100 mL/L BS", "amount": "2mL"},
+        {"action": "dispense", "place": "25 cm² culture flask", "amount": "2mL"},
+        {"action": "put_into_incubator", "object": "culture dish"},
+        {"action": "set_incubator", "CO2": "5%", "temp": "37℃"},
+        {"action": "start_device", "device": "incubator"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "wait_time", "device": "incubator", "time": "24h"}
+      ],
+      "subtasks": [
+        {"action": "take_out_incubator", "object": "culture flask"},
+        {"action": "microscopic_observe", "object": "liver tissue fragments in the culture flask"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "a halo of cell outgrowth appears around the tissue fragments"}
+      ],
+      "subtasks": [
+        {"action": "transfer", "object": "culture flask", "source": "microscopic observation area", "target": "workspace"},
+        {"action": "discard_medium", "object": "culture flask"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "medium in the culture flask removed"},
+        {"type": "resource_ready", "prepare": "medium supplemented with 50 mL/L BS"}
+      ],
+      "subtasks": [
+        {"action": "aspirate", "object": "medium supplemented with 50 mL/L BS", "amount": "6mL"},
+        {"action": "dispense", "place": "culture flask", "amount": "6mL"},
+        {"action": "put_into_incubator", "object": "culture flask"},
+        {"action": "set_incubator", "CO2": "5%", "temp": "37℃"},
+        {"action": "start_device", "device": "incubator"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "wait_time", "device": "incubator", "time": "24h"}
+      ],
+      "subtasks": [
+        {"action": "take_out_incubator", "object": "culture flask"},
+        {"action": "microscopic_observe", "object": "liver tissue fragments in the culture flask"}
+      ]
+    }
+  ]
+}
+
+
+example2:
+【Input】
+Monitor Condition: The culture flask has been incubated for 24 h.
+Subtask 1: Remove the culture flask from the incubator and place it steadily in the microscope observation area.
+Subtask 2: Observe the cells in the culture flask using an inverted microscope.
+
+Monitor Condition: Inverted-microscope observation shows that the cells have attached and formed a confluent monolayer covering the bottom of the flask; Digestion Solution II has been prepared.
+Subtask 3: Move the culture flask to the workspace.
+Subtask 4: Replace the pipette tip, aspirate 2 mL of Digestion Solution II, and dispense it into the culture flask.
+Subtask 5: Place the culture flask steadily into the incubator and close the incubator door.
+Subtask 6: Set the incubator temperature to 4°C and the CO2 concentration to 5% using the control panel.
+Subtask 7: Start the incubator.
+
+Monitor Condition: The culture flask has been incubated for 12 h.
+Subtask 8: Remove the culture flask from the incubator and place it steadily in the workspace.
+Subtask 9: Replace the pipette tip, aspirate the digestion solution from the culture flask, and dispense it into the waste container.
+
+Monitor Condition: The digestion solution in the culture flask has been almost completely removed; culture medium containing 100 mL/L BS has been prepared.
+Subtask 10: Replace the pipette tip, aspirate 2 mL of culture medium containing 100 mL/L BS, and dispense it into the culture flask.
+Subtask 11: Insert the pipette tip 1-2 mm below the liquid surface, then slowly press and release the plunger repeatedly for 3-5 cycles to form a cell suspension.
+
+Monitor Condition: A 200-mesh nylon screen, a centrifuge tube, and the cell suspension to be filtered have been prepared.
+Subtask 12: Install the 200-mesh nylon screen on the centrifuge tube.
+Subtask 13: Replace the pipette tip and aspirate the cell suspension from the culture flask.
+Subtask 14: Move the pipette above the 200-mesh nylon screen and slowly dispense the cell suspension dropwise onto the screen for filtration.
+
+Monitor Condition: The cell suspension in the culture flask has been almost completely filtered; culture medium containing 100 mL/L BS has been prepared.
+Subtask 15: Replace the pipette tip and aspirate 2 mL culture medium containing 100 mL/L BS.
+Subtask 16: Move the pipette above the 200-mesh nylon screen and slowly press the plunger so that the culture medium rinses the inner surface of the screen.
+Subtask 17: Repeat Subtasks 15-16 twice in total.
+
+Monitor Condition: The filtered cell suspension has been collected in the centrifuge tube.
+Subtask 18: Place the centrifuge tube into a rotor slot of the centrifuge.
+Subtask 19: Set the centrifuge to 50 × g for 4 min using the control panel.
+Subtask 20: Start the centrifuge.
+
+Monitor Condition: Wait until the centrifuge has completed its 6 min run.
+Subtask 21: Remove the centrifuge tube from the centrifuge and secure it in the workspace.
+Subtask 22: Replace the pipette tip, insert it 1-2 mm below the liquid surface, and slowly press and release the plunger repeatedly for 3-5 cycles to form a cell suspension.
+
+Monitor Condition: Trypan blue solution, a hemocytometer, and an empty tube have been prepared.
+Subtask 23: Replace the pipette tip, aspirate 10 μL of the cell suspension, and dispense it into the empty tube.
+Subtask 24: Replace the pipette tip, aspirate 10 μL of trypan blue solution, and dispense it into the same tube.
+Subtask 25: Replace the pipette tip, aspirate 10 μL of the mixture from the tube, and load it into the counting chamber of the hemocytometer.
+Subtask 26: Place the hemocytometer under a microscope, count the viable and dead cells, and calculate the viable-cell percentage.
+
+Monitor Condition: The counting result shows that the viable-cell percentage is greater than or equal to 80%. Based on the counting result, the required volume V mL of additional culture medium has been calculated; culture medium containing 100 mL/L BS and a culture dish have been prepared.
+Subtask 27: Replace the pipette tip, aspirate V mL of culture medium containing 100 mL/L BS, and dispense it into the centrifuge tube.
+Subtask 28: Replace the pipette tip, aspirate 2 mL cell suspension from the centrifuge tube, and seed it into the culture dish.
+Subtask 29: Place the culture dish steadily into the incubator and close the incubator door.
+Subtask 30: Set the incubator temperature to 37°C and the CO2 concentration to 5% using the control panel.
+Subtask 31: Start the incubator.
+
+Monitor Condition: The culture dish has been incubated for 24 h.
+Subtask 32: Remove the culture dish from the incubator and place it steadily in the microscope observation area.
+Subtask 33: Observe the cells in the culture dish using an inverted microscope.
+
+Monitor Condition: Microscopic observation shows that the cells in the culture dish have attached and formed a confluent layer covering the bottom.
+Subtask 34: Move the culture dish steadily to the workspace.
+Subtask 35: Use a pipette to slowly aspirate the culture medium and dispense it into the waste container.
+
+Monitor Condition: The solution in the culture dish has been almost completely removed; culture medium containing 50 mL/L BS has been prepared.
+Subtask 36: Replace the pipette tip, aspirate 2 mL of culture medium containing 50 mL/L BS, and dispense it into the culture dish.
+
+【Output】
+{
+  "stages": [
+    {
+      "monitor": [
+        {"type": "wait_time", "device": "incubator", "time": "24h"}
+      ],
+      "subtasks": [
+        {"action": "take_out_incubator", "object": "culture flask"},
+        {"action": "microscopic_observe", "object": "liver tissue fragments in the culture flask"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "cells reach full confluence on the bottom of the culture flask"},
+        {"type": "resource_ready", "prepare": "digestion solution II"}
+      ],
+      "subtasks": [
+        {"action": "transfer", "object": "culture flask", "source": "microscopic observation area", "target": "workspace"},
+        {"action": "aspirate", "object": "digestion solution II", "amount": "2mL"},
+        {"action": "dispense", "place": "culture flask", "amount": "2mL"},
+        {"action": "put_into_incubator", "object": "culture flask"},
+        {"action": "set_incubator", "CO2": "5%", "temp": "4℃"},
+        {"action": "start_device", "device": "incubator"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "wait_time", "device": "incubator", "time": "12h"}
+      ],
+      "subtasks": [
+        {"action": "take_out_incubator", "object": "culture flask"},
+        {"action": "discard_medium", "object": "culture flask"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "medium in the culture flask removed"},
+        {"type": "resource_ready", "prepare": "medium supplemented with 100 mL/L BS"}
+      ],
+      "subtasks": [
+        {"action": "aspirate", "object": "medium supplemented with 100 mL/L BS", "amount": "2mL"},
+        {"action": "dispense", "place": "culture flask", "amount": "2mL"},
+        {"action": "resuspension", "object": "culture flask"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "resource_ready", "prepare": "200-mesh nylon filter, funnel, centrifuge tube"}
+      ],
+      "subtasks": [
+        {"action": "filter_cell_suspension", "source": "culture flask", "filter_tool": "200-mesh nylon filter", "support_tool": "funnel", "target": "centrifuge tube"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "cell suspension from culture flask filtered"},
+        {"type": "resource_ready", "prepare": "medium supplemented with 100 mL/L BS"}
+      ],
+      "subtasks": [
+        {"action": "aspirate", "object": "medium supplemented with 100 mL/L BS", "amount": "2mL"},
+        {"action": "dispense", "place": "the inner surface of the 200-mesh nylon filter", "amount": "2mL"},
+        {"action": "repeat", "back": "aspirate", "count": "1"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "resource_ready", "prepare": "centrifuge tube containing the filtered cell suspension"}
+      ],
+      "subtasks": [
+        {"action": "put_into_centrifuge", "object": "centrifuge tube"},
+        {"action": "set_centrifuge", "force": "50g", "time": "4min"},
+        {"action": "start_device", "device": "centrifuge"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "wait_time", "time": "4min", "device": "centrifuge"},
+        {"type": "resource_ready", "prepare": "trypan blue solution, hemocytometer, empty tube"}
+      ],
+      "subtasks": [
+        {"action": "take_out_centrifuge", "object": "centrifuge tube"},
+        {"action": "count_cells_trypan_blue", "source": "centrifuge tube"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "cell viability is at least 80%"},
+        {"type": "resource_ready", "prepare": "medium supplemented with 100 mL/L BS, culture dish"}
+      ],
+      "subtasks": [
+        {"action": "cell_dilution", "target": "centrifuge tube", "diluent": "medium supplemented with 100 mL/L BS", "density": "5×10^5 cell/mL"},
+        {"action": "cell_seed", "source": "centrifuge tube", "plate": "culture dish", "volume": "2mL"},
+        {"action": "put_into_incubator", "object": "culture dish"},
+        {"action": "set_incubator", "CO2": "5%", "temp": "37℃"},
+        {"action": "start_device", "device": "incubator"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "wait_time", "device": "incubator", "time": "24h"}
+      ],
+      "subtasks": [
+        {"action": "take_out_incubator", "object": "culture dish"},
+        {"action": "microscopic_observe", "object": "cells in culture dish"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "cells reach full confluence on the bottom of the culture dish"},
+        {"type": "resource_ready", "prepare": "medium supplemented with 50 mL/L BS, culture dish"}
+      ],
+      "subtasks": [
+        {"action": "transfer", "object": "culture dish", "source": "microscopic observation area", "target": "workspace"},
+        {"action": "discard_medium", "object": "culture dish"},
+        {"action": "aspirate", "object": "medium supplemented with 50 mL/L BS", "amount": "2mL"},
+        {"action": "dispense", "place": "culture dish", "amount": "2mL"}
+      ]
+    }
+  ]
+}

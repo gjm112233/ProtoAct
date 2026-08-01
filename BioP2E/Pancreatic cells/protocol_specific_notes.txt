@@ -1,0 +1,6 @@
+1. The shaker parameters should include three settings: temperature, rotational speed, and operating time.
+2. After each of the two nylon-strainer filtration operations, the inner surface of the nylon strainer must be rinsed.
+3. In Step (3), the filtrate obtained through the 20 μm nylon strainer must be collected in a 40 mL centrifuge tube.
+4. In Step (4), after the supernatant from the first centrifugation is discarded, 10 mL of HBSS-DVC must be added, followed by a cell-resuspension operation. Then, 5 mL of 4% BSA should be added.
+5. In Step (5), after 10 mL of F12 culture medium is added, an implicit cell-resuspension operation must be included before the cell suspension is transferred into the 25 mL culture flask.
+6. In Step (6), after 12 h of culture, the culture flask must be removed from the incubator and allowed to stand for 5 h. When the culture flask is returned to the incubator, the incubation parameters must be set and the incubator must be started. After the subsequent 48 h of culture, the culture flask must be removed from the incubator.

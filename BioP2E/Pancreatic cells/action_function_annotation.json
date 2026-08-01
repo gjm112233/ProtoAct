@@ -1,0 +1,158 @@
+{
+  "stages": [
+    {
+      "monitor": [
+        {"type": "resource_ready", "prepare": "cleaned pancreas, surgical tools, 25mL conical flask, cell dissociation solution"}
+      ],
+      "subtasks": [
+        {"action": "cut_in_piece", "target": "cleaned pancreas", "volume": "1mm³"},
+        {"action": "transfer", "object": "pancreatic tissue fragments", "source": "workspace", "target": "25mL conical flask"},
+        {"action": "aspirate", "object": "cell dissociation solution", "amount": "5mL"},
+        {"action": "dispense", "place": "25mL conical flask", "amount": "5mL"},
+        {"action": "put_into_device", "device": "shaker", "object": "25mL conical flask"},
+        {"action": "set_device", "temp": "37℃", "time": "15min", "speed": "120r/min"},
+        {"action": "start_device", "device": "shaker"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "wait_time", "time": "15min", "device": "shaker"},
+        {"type": "resource_ready", "prepare": "40μm nylon strainer, centrifuge tube"}
+      ],
+      "subtasks": [
+        {"action": "take_out_device", "device": "shaker", "object": "25mL conical flask"},
+        {"action": "filter_cell_suspension", "source": "25mL conical flask", "filter_tool": "40μm nylon strainer", "target": "centrifuge tube"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "cell suspension from conical flask filtered"},
+        {"type": "resource_ready", "prepare": "cell dissociation solution"}
+      ],
+      "subtasks": [
+        {"action": "aspirate", "object": "cell dissociation solution", "amount": "2mL"},
+        {"action": "dispense", "place": "the inner surface of 40μm nylon strainer", "amount": "2mL"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "all filtrate collected in centrifuge tube"},
+        {"type": "resource_ready", "prepare": "20μm nylon strainer, 40mL centrifuge tube"}
+      ],
+      "subtasks": [
+        {"action": "filter_cell_suspension", "source": "culture dish", "filter_tool": "20μm nylon strainer", "target": "40mL centrifuge tube"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "cell suspension from original centrifuge tube filtered"},
+        {"type": "resource_ready", "prepare": "cell dissociation solution"}
+      ],
+      "subtasks": [
+        {"action": "aspirate", "object": "cell dissociation solution", "amount": "2mL"},
+        {"action": "dispense", "place": "the inner surface of 20μm nylon strainer", "amount": "2mL"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "all filtrate collected in 40mL centrifuge tube"}
+      ],
+      "subtasks": [
+        {"action": "put_into_centrifuge", "object": "40mL centrifuge tube"},
+        {"action": "set_centrifuge", "force": "250g", "time": "5min"},
+        {"action": "start_device", "device": "centrifuge"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "wait_time", "time": "5min", "device": "centrifuge"}
+      ],
+      "subtasks": [
+        {"action": "take_out_centrifuge", "object": "40mL centrifuge tube"},
+        {"action": "discard_supernatant", "object": "40mL centrifuge tube"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "supernatant removed"},
+        {"type": "resource_ready", "prepare": "HBSS-DVC, 4% BSA"}
+      ],
+      "subtasks": [
+        {"action": "aspirate", "object": "HBSS-DVC", "amount": "10mL"},
+        {"action": "dispense", "place": "40mL centrifuge tube", "amount": "10mL"},
+        {"action": "resuspension", "object": "40mL centrifuge tube"},
+        {"action": "aspirate", "object": "4% BSA", "amount": "5mL"},
+        {"action": "dispense", "place": "40mL centrifuge tube", "amount": "5mL"},
+        {"action": "put_into_centrifuge", "object": "40mL centrifuge tube"},
+        {"action": "set_centrifuge", "force": "100g", "time": "5min"},
+        {"action": "start_device", "device": "centrifuge"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "wait_time", "time": "5min", "device": "centrifuge"}
+      ],
+      "subtasks": [
+        {"action": "take_out_centrifuge", "object": "40mL centrifuge tube"},
+        {"action": "discard_supernatant", "object": "40mL centrifuge tube"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "supernatant removed"},
+        {"type": "resource_ready", "prepare": "F12 culture medium, 25mL culture flask"}
+      ],
+      "subtasks": [
+        {"action": "aspirate", "object": "F12 culture medium", "amount": "10mL"},
+        {"action": "dispense", "place": "40mL centrifuge tube", "amount": "10mL"},
+        {"action": "resuspension", "object": "40mL centrifuge tube"},
+        {"action": "transfer_liquid", "source": "40mL centrifuge tube", "target": "25mL culture flask"},
+        {"action": "put_into_incubator", "object": "25mL culture flask"},
+        {"action": "set_incubator", "CO2": "5%", "temp": "37℃"},
+        {"action": "start_device", "device": "incubator"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "wait_time", "time": "12h", "device": "incubator"}
+      ],
+      "subtasks": [
+        {"action": "take_out_incubator", "object": "25mL culture flask"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "wait_time", "time": "5h"},
+        {"type": "resource_ready", "prepare": "F12 culture medium"}
+      ],
+      "subtasks": [
+        {"action": "discard_medium", "object": "25mL culture flask"},
+        {"action": "aspirate", "object": "F12 culture medium", "amount": "10mL"},
+        {"action": "dispense", "place": "25mL culture flask", "amount": "10mL"},
+        {"action": "put_into_incubator", "object": "25mL culture flask"},
+        {"action": "set_incubator", "CO2": "5%", "temp": "37℃"},
+        {"action": "start_device", "device": "incubator"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "wait_time", "time": "48h", "device": "incubator"}
+      ],
+      "subtasks": [
+        {"action": "take_out_incubator", "object": "25mL culture flask"}
+      ]
+    }
+  ]
+}

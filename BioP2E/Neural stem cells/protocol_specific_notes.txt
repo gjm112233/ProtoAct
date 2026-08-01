@@ -1,0 +1,2 @@
+1. In Step (1), the rinsing procedure should include the following operations: add D-Hanks solution, gently shake the culture dish, and remove the solution. By default, this rinsing procedure is performed once.
+2. In Step (2), after filtration through the 200-mesh nylon screen has been completed, an operation for rinsing the nylon screen must be included.

@@ -1,0 +1,170 @@
+{
+  "stages": [
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "the mouse lung tissue has been washed, minced, and placed in a beaker containing 4 mL of DNase"},
+        {"type": "resource_ready", "prepare": "fetal bovine serum, bronchoalveolar lavage solution II, a flask"}
+
+      ],
+      "subtasks": [
+        {"action": "aspirate", "object": "fetal bovine serum", "amount": "5mL"},
+        {"action": "dispense", "place": "beaker", "amount": "5mL"},
+        {"action": "aspirate", "object": "bronchoalveolar lavage solution II", "amount": "20mL"},
+        {"action": "dispense", "place": "beaker", "amount": "20mL"},
+        {"action": "transfer", "object": "lung tissue", "source": "beaker", "target": "flask"},
+        {"action": "transfer_liquid", "source": "beaker", "target": "flask"},
+        {"action": "put_into_device", "device": "shaking water bath","object": "flask"},
+        {"action": "set_device", "device": "shaking water bath", "temp": "37℃", "time": "5min"},
+        {"action": "start_device", "device": "shaking water bath"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "wait_time", "device": "shaking water bath", "time": "5min"},
+        {"type": "resource_ready", "prepare": "200-mesh nylon filter, centrifuge tube"}
+      ],
+      "subtasks": [
+        {"action": "take_out_device", "device": "shaking water bath","object": "flask"},
+        {"action": "filter_cell_suspension", "source": "flask", "filter_tool": "200-mesh nylon filter", "target": "centrifuge tube"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "cell suspension from flask filtered"},
+        {"type": "resource_ready", "prepare": "DMEM culture medium"}
+      ],
+      "subtasks": [
+        {"action": "aspirate", "object": "DMEM culture medium", "amount": "2mL"},
+        {"action": "dispense", "place": "the inner surface of 200-mesh nylon filter", "amount": "2mL"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "cell suspension from flask is mostly filtered"},
+        {"type": "resource_ready", "prepare": "centrifuge tube containing the filtered cell suspension"}
+      ],
+      "subtasks": [
+        {"action": "put_into_centrifuge", "object": "centrifuge tube"},
+        {"action": "set_centrifuge", "force": "400g", "time": "5min"},
+        {"action": "start_device", "device": "centrifuge"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "wait_time", "time": "5min", "device": "centrifuge"}
+      ],
+      "subtasks": [
+        {"action": "take_out_centrifuge", "object": "centrifuge tube"},
+        {"action": "discard_supernatant", "object": "centrifuge tube"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "supernatant removed"},
+        {"type": "resource_ready", "prepare": "culture flask containing DMEM medium"}
+      ],
+      "subtasks": [
+        {"action": "aspirate", "object": "serum-free DMEM medium", "amount": "2mL"},
+        {"action": "dispense", "place": "centrifuge tube", "amount": "2mL"},
+        {"action": "resuspension", "object": "centrifuge tube"},
+        {"action": "transfer_liquid", "source": "centrifuge tube", "target": "culture flask"},
+        {"action": "put_into_incubator", "object": "culture flask"},
+        {"action": "set_incubator", "temp": "37℃", "CO2": "5%"},
+        {"action": "start_device", "device": "incubator"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "wait_time", "device": "incubator", "time": "3h"},
+        {"type": "resource_ready", "prepare": "centrifuge tube"}
+      ],
+      "subtasks": [
+        {"action": "take_out_incubator", "object": "culture flask"},
+        {"action": "transfer_liquid", "source": "culture flask", "target": "centrifuge tube"},
+        {"action": "put_into_centrifuge", "object": "centrifuge tube"},
+        {"action": "set_centrifuge", "force": "400g", "time": "10min"},
+        {"action": "start_device", "device": "centrifuge"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "wait_time", "time": "10min", "device": "centrifuge"}
+      ],
+      "subtasks": [
+        {"action": "take_out_centrifuge", "object": "centrifuge tube"},
+        {"action": "discard_supernatant", "object": "centrifuge tube"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "supernatant removed"},
+        {"type": "resource_ready", "prepare": "serum-free DMEM medium"}
+      ],
+      "subtasks": [
+        {"action": "aspirate", "object": "serum-free DMEM medium", "amount": "2mL"},
+        {"action": "dispense", "place": "centrifuge tube", "amount": "2mL"},
+        {"action": "shake", "object": "centrifuge tube"},
+        {"action": "discard_medium", "object": "centrifuge tube"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "medium in the centrifuge tube removed"},
+        {"type": "resource_ready", "prepare": "DMEM medium containing 20% fetal bovine serum"}
+      ],
+      "subtasks": [
+        {"action": "aspirate", "object": "DMEM medium containing 20% fetal bovine serum", "amount": "2mL"},
+        {"action": "dispense", "place": "centrifuge tube", "amount": "2mL"},
+        {"action": "resuspension", "object": "centrifuge tube"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "resource_ready", "prepare": "trypan blue solution, hemocytometer, empty tube"}
+      ],
+      "subtasks": [
+        {"action": "count_cells_trypan_blue", "source": "centrifuge tube"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "obtain the cells counting result"},
+        {"type": "resource_ready", "prepare": "DMEM medium containing 20% fetal bovine serum, culture flask"}
+      ],
+      "subtasks": [
+        {"action": "cell_dilution", "target": "centrifuge tube", "diluent": "DMEM medium containing 20% fetal bovine serum"},
+        {"action": "cell_seed", "source": "centrifuge tube", "plate": "culture flask", "volume": "2mL"},
+        {"action": "put_into_incubator", "object": "culture flask"},
+        {"action": "set_incubator", "CO2": "5%", "temp": "37℃"},
+        {"action": "start_device", "device": "incubator"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "wait_time", "time": "24h", "device": "incubator"},
+        {"type": "resource_ready", "prepare": "DMEM medium containing 20% fetal bovine serum"}
+      ],
+      "subtasks": [
+        {"action": "take_out_incubator", "object": "culture flask"},
+        {"action": "discard_medium", "object": "culture flask"},
+        {"action": "aspirate", "object": "DMEM medium containing 20% fetal bovine serum", "amount": "2mL"},
+        {"action": "dispense", "place": "culture flask", "amount": "2mL"},
+        {"action": "put_into_incubator", "object": "culture flask"},
+        {"action": "set_incubator", "CO2": "5%", "temp": "37℃"},
+        {"action": "start_device", "device": "incubator"}
+      ]
+    }
+  ]
+}

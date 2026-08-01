@@ -1,0 +1,7 @@
+1. In Step (1), collagenase solution is added at a ratio of 1 mL per 0.1 g of tissue. Based on the given tissue mass of approximately 3 g, the required volume of collagenase solution should be inferred as 30 mL.
+2. Before centrifugation in Step (1), the cell suspension must be transferred from the culture flask into a centrifuge tube.
+3. In Step (2), “resuspend the cells in 5 mL of MSS containing 5% serum” should be parsed into two operations: adding the medium and then resuspending the cells.
+4. Step (2) includes four sequential filtration operations, and each filtration must be followed by an operation for rinsing the corresponding nylon screen.
+5. Although Step (2) does not explicitly state that the supernatant should be discarded after centrifugation, “collect the cells” implies removal of the supernatant.
+6. In Step (2), “resuspend the cells in 5 mL of WAJC 404 culture medium” should likewise be parsed into two operations: adding the culture medium and then resuspending the cells.
+7. On Days 3 and 5 of the final culture stage, the 24-well culture plate must be removed from the incubator, the culture medium must be replaced, and the plate must be returned to the incubator. The incubation parameters must then be set, and the incubator must be started. On Day 7, the 24-well culture plate must be removed from the incubator.

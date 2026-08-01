@@ -1,0 +1,5 @@
+Initial state: Adipose tissue particles cut into approximately 1 mm³ pieces have been prepared.
+
+(1) Place the adipose tissue particles into a centrifuge tube, add an appropriate volume of PBS solution, and centrifuge at 1,000 rpm for 10 min.
+
+(2) Collect the purified adipose tissue particles from the upper layer and gently spread them over the bottom surface of a culture flask. Allow the flask to stand for 5 min. After the adipose tissue particles have firmly adhered, add DMEM culture medium and culture them under standard conditions in an incubator. After 5 days, when numerous short spindle-shaped cells are observed, replace the DMEM culture medium and continue culturing under standard conditions.

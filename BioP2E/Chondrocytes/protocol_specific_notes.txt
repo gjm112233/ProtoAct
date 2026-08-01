@@ -1,0 +1,9 @@
+1. In Step (2), the tissue pieces must be washed twice with GBSS. Each washing cycle should include the following operations: add GBSS, gently shake the glass culture dish, and remove the solution. After one complete washing cycle, an additional subtask should specify that the corresponding subtasks are repeated until a total of two washes has been completed.
+2. In the transfer operation in Step (2), the tissue pieces must be transferred from the glass culture dish into the 25 mL screw-cap tube.
+3. In Step (3), the tissue pieces must be washed twice with trypsin. Each washing cycle should include the following operations: add trypsin, gently shake the screw-cap tube, and remove the solution. After one complete washing cycle, an additional subtask should specify that the corresponding subtasks are repeated until a total of two washes has been completed.
+4. At the end of Step (3), the tissue pieces must be washed twice with GBSS following the same washing procedure described above. After one complete washing cycle, an additional subtask should specify that the corresponding subtasks are repeated until a total of two washes has been completed.
+5. Before the first centrifugation, the cell suspension must be transferred from the 25 mL screw-cap tube into a centrifuge tube.
+6. After the first centrifugation, the supernatant must be discarded.
+7. After the second centrifugation, the supernatant must not be discarded. It must be transferred into a new centrifuge tube for the third centrifugation.
+8. After the third centrifugation, the supernatant must be discarded.
+9. In Step (8), after the cells are resuspended in 8 mL of F12 culture medium containing 12% FBS, 4 mL of F12 culture medium must be added to the 75 cm² culture flask to bring the total volume to 12 mL.

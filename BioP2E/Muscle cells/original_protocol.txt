@@ -1,0 +1,13 @@
+Initial state: Rat limbs have been obtained after removal of the skin and paws.
+
+(1) Place the limbs in a culture dish and add 20 mL of PBSA solution containing antibiotics. After 5 min, remove the PBSA solution. Repeat this washing procedure until a total of four washes has been completed.
+
+(2) Transfer the limbs into a sterile culture dish and add 5 mL of serum-free culture medium. Cut the limbs into tissue pieces of approximately 1 mm³ and transfer the tissue pieces into a culture dish containing serum-free culture medium.
+
+(3) Allow the tissue pieces to stand for 5 min to settle. Transfer them into a 25 cm² culture flask, add 10 mL of serum-free culture medium and collagenase solution, and incubate at 37°C for 24 h.
+
+(4) Pipette vigorously to disperse the tissue, transfer the suspension into a centrifuge tube, and centrifuge at 500 × g for 5 min.
+
+(5) Remove the supernatant, resuspend the cells in culture medium containing 10% fetal bovine serum and antibiotics, and seed the cells into a culture dish.
+
+(6) Place the culture dish in an incubator at 37°C. After 24 h, replace the culture medium and continue culturing.

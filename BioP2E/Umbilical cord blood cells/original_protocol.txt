@@ -1,0 +1,7 @@
+Initial state: A total of 20 mL of umbilical cord blood has been collected from a newborn umbilical cord and initially placed in a 250 mL dropping bottle.
+
+(1) Add a volume of 6% hydroxyethyl starch sodium chloride injection equal to one-quarter of the umbilical cord blood volume into the 250 mL dropping bottle. Mix thoroughly and allow the mixture to stand for 45 min.
+
+(2) Aspirate 3 mL of the upper cell suspension and centrifuge at 1,000 rpm for 8 min. Discard the supernatant and resuspend the cells in 5 mL of IMDM culture medium. Wash the cells twice by centrifugation at 1,000 rpm for 5 min. Count the cells and adjust the cell density to (1 \times 10^9) cells/mL using IMDM culture medium containing 20% FBS.
+
+(3) Seed the cells into a 35 mm six-well culture plate and culture them in an incubator at 37°C with 5% CO₂.

@@ -1,0 +1,7 @@
+Initial state: A washed rabbit gallbladder has been prepared.
+
+(1) Place the gallbladder in a culture dish with the mucosal surface facing downward. Add 0.125% type IV collagenase solution for digestion and incubate at 37°C for 15 min. Then add an appropriate volume of DMEM/F12 culture medium containing 10% fetal bovine serum.
+
+(2) Centrifuge the collected cell suspension at 1,000 rpm for 5 min. Discard the supernatant and adjust the cell density to 5 × 10^4 cells/mL.
+
+(3) Seed the cells into a culture flask and culture them at 37°C with 5% CO₂ for 5 days. Replace the culture medium once on Day 3.

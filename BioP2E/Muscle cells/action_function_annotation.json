@@ -1,0 +1,122 @@
+{
+  "stages": [
+    {
+      "monitor": [
+        {"type": "resource_ready", "prepare": "rat limbs with skin removed and paws excised, culture dish, PBSA solution containing antibiotics"}
+      ],
+      "subtasks": [
+        {"action": "pick_and_place", "object": "rat limbs", "place": "culture dish"},
+        {"action": "aspirate", "object": "PBSA solution containing antibiotics", "amount": "20mL"},
+        {"action": "dispense", "place": "culture dish", "amount": "20mL"},
+        {"action": "shake", "object": "culture dish"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "wait_time", "time": "5min"}
+      ],
+      "subtasks": [
+        {"action": "discard_medium", "object": "culture dish"},
+        {"action": "repeat", "back": "aspirate", "count": "3"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "time": "rat limbs have been washed four times"},
+        {"type": "resource_ready", "prepare": "petri dish, serum-free culture medium, surgical instruments"}
+      ],
+      "subtasks": [
+        {"action": "transfer", "object": "rat limbs", "source": "culture dish", "target": "petri dish"},
+        {"action": "aspirate", "object": "serum-free culture medium", "amount": "5mL"},
+        {"action": "dispense", "place": "petri dish", "amount": "5mL"},
+        {"action": "cut_in_piece", "target": "rat limbs in petri dish", "volume": "1mm³"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "time": "rat limbs have been cut into 1mm³ fragments"},
+        {"type": "resource_ready", "prepare": "culture dish containing serum-free culture medium"}
+      ],
+      "subtasks": [
+        {"action": "transfer", "object": "limb fragments", "source": "petri dish", "target": "culture dish containing serum-free culture medium"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "wait_time", "time": "5min"},
+        {"type": "resource_ready", "prepare": "25cm² culture flask, serum-free culture medium, collagenase solution"}
+      ],
+      "subtasks": [
+        {"action": "transfer", "object": "limb fragments", "source": "culture dish", "target": "25cm² culture flask"},
+        {"action": "aspirate", "object": "serum-free culture medium", "amount": "10mL"},
+        {"action": "dispense", "place": "25cm² culture flask", "amount": "10mL"},
+        {"action": "aspirate", "object": "collagenase solution", "amount": "2mL"},
+        {"action": "dispense", "place": "25cm² culture flask", "amount": "2mL"},
+        {"action": "put_into_incubator", "object": "25cm² culture flask"},
+        {"action": "set_incubator", "CO2": "5%", "temp": "37℃"},
+        {"action": "start_device", "device": "incubator"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "wait_time", "time": "24h", "device": "incubator"},
+        {"type": "resource_ready", "prepare": "centrifuge tube"}
+      ],
+      "subtasks": [
+        {"action": "take_out_incubator", "object": "25cm² culture flask"},
+        {"action": "resuspension", "object": "25cm² culture flask"},
+        {"action": "transfer_liquid", "source": "25cm² culture flask", "target": "centrifuge tube"},
+        {"action": "put_into_centrifuge", "object": "centrifuge tube"},
+        {"action": "set_centrifuge", "force": "500g", "time": "5min"},
+        {"action": "start_device", "device": "centrifuge"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "wait_time", "time": "5min", "device": "centrifuge"}
+      ],
+      "subtasks": [
+        {"action": "take_out_centrifuge", "object": "centrifuge tube"},
+        {"action": "discard_supernatant", "object": "centrifuge tube"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "visual_state", "observe": "supernatant removed"},
+        {"type": "resource_ready", "prepare": "culture medium containing 10% FBS and antibiotics, culture dish"}
+      ],
+      "subtasks": [
+        {"action": "aspirate", "object": "culture medium containing 10% FBS and antibiotics", "amount": "2mL"},
+        {"action": "dispense", "place": "centrifuge tube", "amount": "2mL"},
+        {"action": "resuspension", "object": "centrifuge tube"},
+        {"action": "cell_seed", "source": "centrifuge tube", "plate": "culture dish", "volume": "2mL"},
+        {"action": "put_into_incubator", "object": "culture dish"},
+        {"action": "set_incubator", "temp": "37℃", "CO2": "5%"},
+        {"action": "start_device", "device": "incubator"}
+      ]
+    },
+
+    {
+      "monitor": [
+        {"type": "wait_time", "device": "incubator", "time": "24h"},
+        {"type": "resource_ready", "prepare": "culture medium containing 10% FBS and antibiotics"}
+      ],
+      "subtasks": [
+        {"action": "take_out_incubator", "object": "culture dish"},
+        {"action": "discard_medium", "object": "culture dish"},
+        {"action": "aspirate", "object": "culture medium containing 10% FBS and antibiotics", "amount": "2mL"},
+        {"action": "dispense", "place": "culture dish", "amount": "2mL"},
+        {"action": "put_into_incubator", "object": "culture dish"},
+        {"action": "set_incubator", "temp": "37℃", "CO2": "5%"},
+        {"action": "start_device", "device": "incubator"}
+      ]
+    }
+  ]
+}
